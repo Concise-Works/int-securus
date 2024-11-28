@@ -1,0 +1,98 @@
+\section{The Internet}
+
+\noindent
+Terminology and concepts of the internet, which will be used throughout this text.
+
+\begin{Def}[Internet]
+
+    The \textbf{Internet} is a global network of distributed system communicating over an \textbf{Internet Protocol} (IP) \cite{cloudflare_internet_protocol}.
+    Documents served over the internet are referred to as \textbf{webpages} or \textbf{websites}.
+\end{Def}
+\begin{Def}[HTTP \& HTML]
+
+    \textbf{HTTP} (HyperText Transfer Protocol), the protocol which transfer data over the internet, 
+    distributing \textbf{HTML} (HyperText Markup Language) documents. Such 
+    documents include \textbf{hyperlinks} to other websites, images, and other media \cite{rfc9110}.
+\end{Def}
+\begin{Def}[RFC (Request for Comments)]
+
+    \textbf{RFC} (Request for Comments) is a publication from the \textbf{Internet Engineering Task Force} (IETF) 
+    and the \textbf{Internet Society} (ISOC). This body governs the specifications for the internet and its protocols \cite{rfc}.
+\end{Def}
+
+\begin{Def}[DNS and IP Addresses]
+
+    An \textbf{Internet Protocol address} (IP address) is a unique identifier for a device on a network. 
+    The \textbf{Domain Name System} (DNS) maps domain names to IP addresses \cite{rfc760}.
+\end{Def}
+
+\newpage
+
+\begin{Def}[Web Browser]
+
+    A \textbf{web browser} is a software application for accessing the \textbf{World Wide Web} (WWW) \cite{ou_internet_history}.
+\end{Def}
+
+\begin{Def}[URL (Uniform Resource Locator)]
+
+    A \textbf{URL} (Uniform Resource Locator) references each webpage, specifying protocol, domain, and path \cite{w3c_html_href_draft}.
+    E.g., \texttt{http://www.example.com/path/to/resource}.
+    \begin{itemize}
+        \item \textbf{Protocol}: \texttt{http}
+        \item \textbf{Domain}: \texttt{www.example.com}
+        \item \textbf{Path}: \texttt{/path/to/resource}
+    \end{itemize}
+\end{Def}
+\begin{Def}[Client-Server Model]
+
+    Most of the internet operates on a \textbf{client-server model}, where an agent device\textendash the \textbf{client}\textendash requests data from another agent\textendash the \textbf{server}\textendash 
+    which serves an appropriate response. Clients are not servers and vice versa, as they receive and interpret data differently \cite{cloudflare_client_server}.
+\end{Def}
+
+\begin{Def}[HTTP Methods]
+    
+        When a client makes a request to a server, they must specify their intent, categorized by \textbf{HTTP methods} \cite{rfc2616}:
+        \begin{itemize}
+            \item \textbf{GET}: Retrieve data from the server.
+            \item \textbf{POST}: Send data to the server.
+            \item \textbf{PUT}: Update data on the server.
+            \item \textbf{DELETE}: Remove data from the server.
+        \end{itemize}
+\end{Def}
+\begin{Def}[HTTP Headers]
+
+    \textbf{HTTP headers} are key-value pairs sent between the client and server to provide \textbf{metadata} about the request or response.
+    \textbf{Metadata} is data about the transmitted data, telling the receiver how the incoming data should be interpreted \cite{rfc2616}.
+\end{Def}
+
+
+\newpage
+\noindent
+Tim Berners-Lee and his team at CERN developed the first web server and browser in 1989 \cite{w3c_http_history}.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{@{}p{3cm}p{10cm}@{}}
+    \toprule
+    \textbf{HTTP Version} & \textbf{Description} \\ \midrule
+    HTTP/0.9 (1991)       & Only supports GET method (retrieving HTML alone). \\
+    HTTP/1.0 (1996)       & RFC\#1945, adding support for metadata in HTTP headers, status codes, and POST and HEAD methods \cite{rfc1945}. \\
+    HTTP/1.1 (1997)       & Defined in RFC\#2068 and later updated by RFC\#2616, introduced persistent connections, chunked transfer encoding, and additional cache control mechanisms \cite{rfc2068}\cite{rfc2616}. \\
+    HTTP/2 (2015)         & RFC\#7540, improving performance by enabling request and response multiplexing, header compression, and prioritization \cite{rfc7540}. \\
+    HTTP/3 (2022)         & Builds upon HTTP/2's features and uses the QUIC transport protocol to reduce latency and improve security. \cite{rfc9114} \\ \bottomrule
+    \end{tabular}
+    \caption{Evolution of HTTP Versions}    
+    \label{tab:http_versions}
+\end{table}
+
+\begin{Note}
+    \textbf{Note:} In short, \textbf{Persistent Connections} allow multiple requests and responses to be sent over a single connection, reducing latency and improving performance \cite{rfc2616}.
+    \textbf{Chunked Transfer Encoding} allows the server to send data in chunks, enabling the client to start processing data before the entire response is received \cite{rfc2616}.
+    \textbf{Multiplexing}, is the ability to send multiple requests and responses over a single connection, reducing latency and improving performance \cite{multiplexing_networkencyclopedia}. We 
+    will discuss \textbf{QUIC} and other transfer protocols in a later section.
+
+\end{Note}
+
+\section{Data Transmission}
+
+

@@ -1,0 +1,85 @@
+\begin{thebibliography}{10}
+
+\bibitem{rfc760}
+{DoD standard Internet Protocol}.
+\newblock RFC 760, January 1980.
+
+\bibitem{rfc7540}
+M.~Belshe, R.~Peon, and M.~Thomson.
+\newblock {Hypertext Transfer Protocol Version 2 (HTTP/2)}.
+\newblock Request for Comments, May 2015.
+\newblock Category: Standards Track.
+
+\bibitem{rfc1945}
+T.~Berners-Lee, R.~Fielding, and H.~Frystyk.
+\newblock {Hypertext Transfer Protocol -- HTTP/1.0}.
+\newblock Request for Comments, May 1996.
+\newblock Category: Informational.
+
+\bibitem{rfc9114}
+M.~Bishop.
+\newblock {HTTP/3}.
+\newblock Request for Comments, June 2022.
+\newblock Category: Standards Track.
+
+\bibitem{cloudflare_client_server}
+{Cloudflare Learning Center}.
+\newblock What do client side and server side mean?, n.d.
+\newblock Accessed: 2024-11-27.
+
+\bibitem{cloudflare_internet_protocol}
+{Cloudflare Learning Center}.
+\newblock What is internet protocol (ip)?, n.d.
+\newblock Accessed: 2024-11-27.
+
+\bibitem{examplebook}
+John Doe.
+\newblock {\em Example Book}.
+\newblock Example Publisher, 2020.
+
+\bibitem{multiplexing_networkencyclopedia}
+{Editorial Team}.
+\newblock Multiplexing.
+\newblock {\em Network Encyclopedia}, October 2023.
+\newblock Last edited October 5, 2023.
+
+\bibitem{rfc2068}
+R.~Fielding, J.~Gettys, J.~Mogul, H.~Frystyk, and T.~Berners-Lee.
+\newblock {Hypertext Transfer Protocol -- HTTP/1.1}.
+\newblock Request for Comments, January 1997.
+\newblock Category: Standards Track.
+
+\bibitem{rfc2616}
+R.~Fielding, J.~Gettys, J.~Mogul, H.~Frystyk, L.~Masinter, P.~Leach, and
+  T.~Berners-Lee.
+\newblock {Hypertext Transfer Protocol -- HTTP/1.1}.
+\newblock Request for Comments, June 1999.
+\newblock Obsoleted by RFCs 7230, 7231, 7232, 7233, 7234, and 7235. Errata
+  exist.
+
+\bibitem{rfc9110}
+Roy~T. Fielding, Mark Nottingham, and Julian Reschke.
+\newblock {HTTP Semantics}.
+\newblock RFC 9110, June 2022.
+
+\bibitem{rfc}
+Martin Thomson and Francesca Palombini.
+\newblock The rfc series and rfc editor.
+\newblock RFC 9280, June 2022.
+
+\bibitem{ou_internet_history}
+{University of Oklahoma}.
+\newblock History of the world wide web, n.d.
+\newblock Accessed: 2024-11-27.
+
+\bibitem{w3c_html_href_draft}
+{World Wide Web Consortium (W3C)}.
+\newblock Html working group draft: Href and url standards, n.d.
+\newblock Accessed: 2024-11-27.
+
+\bibitem{w3c_http_history}
+{World Wide Web Consortium (W3C)}.
+\newblock Hypertext transfer protocol (http) as implemented in w3, n.d.
+\newblock Accessed: 2024-11-27.
+
+\end{thebibliography}

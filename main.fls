@@ -349,6 +349,14 @@ INPUT C:\Users\tuber\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\tuber\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\tuber\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 OUTPUT main.xdv
+INPUT .\Sections\network\net.tex
+INPUT .\Sections\network\net.tex
+INPUT .\Sections\network\net.tex
+INPUT .\Sections\network\net.tex
+INPUT Sections\network\net.tex
+INPUT .\main.bbl
+INPUT .\main.bbl
+INPUT main.bbl
 OUTPUT main.toc
 INPUT main.aux
 INPUT .\main.out
