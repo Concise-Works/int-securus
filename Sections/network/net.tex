@@ -297,7 +297,7 @@ When IP addresses began
 \begin{Def}[Classless Inter-Domain Routing (CIDR)]
 
     \textbf{Classless Inter-Domain Routing} (CIDR), introduced in 1993 through RFC\#1518 and RFC\#1519 to address IPv4 exhaustion.
-    CIDR replaced class-based subnetting with VLSM.
+    \textbf{CIDR replaced classful subnetting} with VLSM.
 
     \noindent
     CIDR notation is written as \underline{\texttt{IP Address/Prefix Length} (e.g., \texttt{192.168.1.0/24})}, where:
@@ -332,28 +332,61 @@ When IP addresses began
 
 \end{Def}
 \newpage
+\begin{Def}[IP Address Components]
+    
+        \item \textbf{Network Address}:
+        \begin{itemize}
+            \item Identifies the specific network segment to which a device is connected.
+            \item Determined by setting all bits in the host portion to 0.
+            \item Example: For the IP address \texttt{192.168.1.10} with a subnet mask of \texttt{255.255.255.0} (/24), the network address is \texttt{192.168.1.0}.
+        \end{itemize}
 
-\begin{Example}[Subnetting Decimal to Binary Conversion]
+        \item \textbf{Host Address}:
+        \begin{itemize}
+            \item Uniquely identifies a device within a network segment.
+            \item The bits in the IP address designated for hosts, specified by the subnet mask.
+            \item Example: In the IP address \texttt{192.168.1.10} with a /24 subnet mask, the host portion is the last octet (10).
+        \end{itemize}
 
-    Consider the subnet mask \texttt{192.168.2.64/26}. The subnet mask (\#/26) says the first 26 bits are for the network and the remaining 6 bits are hosts (36 bits total).
-\end{Example}
+        \item \textbf{Broadcast Address}:
+        \begin{itemize}
+            \item Used to communicate with all devices on a specific network segment simultaneously.
+            \item Determined by setting all bits in the host portion to 1.
+            \item Example: For the network \texttt{192.168.1.0/24}, the broadcast address is \texttt{192.168.1.255}.
+        \end{itemize}
+      
+
+    \hfill \cite{sunshine_rfc919} \cite{postel_rfc922} \cite{manning_rfc1878}
+
+\end{Def}
 \noindent
-The below table shows an FLSM example:
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{@{}lccc@{}}
-    \toprule
-    \textbf{Network Address} & \textbf{Hosts}   & \textbf{Broadcast Address} \\ \midrule
-    192.168.100.0            & .1 - .62         & .63                        \\
-    192.168.100.64           & .65 - .126       & .127                       \\
-    192.168.100.128          & .129 - .190      & .191                       \\
-    192.168.100.192          & .193 - .254      & .255                       \\ \bottomrule
-    \end{tabular}
-    \caption{Subnet Breakdown: Network Addresses, Host Ranges, and Broadcast Addresses}
-    \label{tab:subnet_breakdown}
-\end{table}
+Consider the IP address \texttt{192.168.2.12/26} and its binary \texttt{11000000.10101000.00000010.00001100}:
+
+\vspace{-1em}
+\begin{figure}[h!]
+    \hspace{2em}
+    \includegraphics[width=0.7\textwidth]{Sections/network/ip_address.png}
+    \caption{Binary Subnetting: Red indicating parts of the IP address identified for each component.}
+    \label{fig:subnetting}
+\end{figure}
+\noindent
+
+\begin{Example}[CIDR Example]
 
 
+Consider the FLSM below:
+\[
+\begin{array}{|c|c|c|}
+\hline
+\textbf{Network Address} & \textbf{Hosts} & \textbf{Broadcast Address} \\ \hline
+192.168.100.0 & .1 - .62 & .63 \\ \hline
+192.168.100.64 & .65 - .126 & .127 \\ \hline
+192.168.100.128 & .129 - .190 & .191 \\ \hline
+192.168.100.192 & .193 - .254 & .255 \\ \hline
+\end{array}
+\]
+
+\end{Example}
     
 
 

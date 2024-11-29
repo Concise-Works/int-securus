@@ -156,6 +156,13 @@ Kwun-Hung Li and Kin-Yeung Wong.
   sites.
 \newblock {\em Information}, 12(6), 2021.
 
+\bibitem{manning_rfc1878}
+B.~Manning and P.~Perkins.
+\newblock Variable length subnet table for ipv4.
+\newblock Technical Report RFC 1878, Internet Engineering Task Force (IETF),
+  December 1995.
+\newblock Informational.
+
 \bibitem{narten_rfc4861}
 T.~Narten, E.~Nordmark, W.~Simpson, and H.~Soliman.
 \newblock Neighbor discovery for ip version 6 (ipv6).
@@ -179,10 +186,24 @@ J.~Postel.
   Marina del Rey, CA, USA, September 1981.
 \newblock Obsoleted by RFC 1349, RFC 2474, RFC 6864.
 
+\bibitem{postel_rfc922}
+J.~Postel.
+\newblock Broadcasting internet datagrams in the presence of subnets.
+\newblock Technical Report RFC 922, Internet Engineering Task Force (IETF),
+  October 1984.
+\newblock Standards Track.
+
 \bibitem{Rayes2022}
 Ammar Rayes and Samer Salam.
 \newblock {\em The Internet in IoT}, pages 35--62.
 \newblock Springer International Publishing, Cham, 2022.
+
+\bibitem{sunshine_rfc919}
+C.~Sunshine and J.~Postel.
+\newblock Broadcasting internet datagrams.
+\newblock Technical Report RFC 919, Internet Engineering Task Force (IETF),
+  October 1984.
+\newblock Standards Track.
 
 \bibitem{rfc}
 Martin Thomson and Francesca Palombini.
@@ -193,6 +214,12 @@ Martin Thomson and Francesca Palombini.
 {University of Oklahoma}.
 \newblock History of the world wide web, n.d.
 \newblock Accessed: 2024-11-27.
+
+\bibitem{concise_works_modules}
+Concise Works.
+\newblock Sect modules.
+\newblock \url{https://github.com/Concise-Works/sect-modules}, n.d.
+\newblock Accessed November 2024.
 
 \bibitem{w3c_html_href_draft}
 {World Wide Web Consortium (W3C)}.
