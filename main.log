@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.15)  29 NOV 2024 00:02
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.15)  29 NOV 2024 02:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1332,18 +1332,89 @@ File: Sections/network/ip_address.png Graphic file (type bmp)
 
 [12]
 Package mdframed Info: mdframed works in twoside mode on input line 374.
-Package mdframed Info: Not enough space on this page on input line 389.
-) (main.bbl
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 377--379
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--382
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--385
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--388
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--391
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--394
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 395--397
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
+
+ []
+
+
 
 [13]
+Package mdframed Info: mdframed works in twoside mode on input line 412.
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--429
+
+ []
+
+File: Sections/network/subnetting.png Graphic file (type bmp)
+<Sections/network/subnetting.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--432
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--438
+
+ []
+
+Package mdframed Info: Not enough space on this page on input line 448.
+) (main.bbl
+
+[14]
 bibitemlist
 
 
-[14]
+[15]
 
-[15])
+[16])
 
-[16]
+[17]
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
@@ -1356,12 +1427,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 04CD50862DA16596295CDDA3ED2D9393;745.
  ) 
 Here is how much of TeX's memory you used:
- 29747 strings out of 409029
- 532926 string characters out of 5756741
+ 29762 strings out of 409029
+ 533386 string characters out of 5756741
  1941612 words of memory out of 5000000
- 51986 multiletter control sequences out of 15000+600000
+ 52000 multiletter control sequences out of 15000+600000
  564920 words of font info for 81 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,12n,110p,584b,956s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (16 pages, 308936 bytes).
+Output written on main.xdv (17 pages, 347064 bytes).

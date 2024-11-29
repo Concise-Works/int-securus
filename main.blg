@@ -6,45 +6,45 @@ The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 5 items.
 Database file #1: refs.bib
 Warning--to sort, need author or key in rfc760
-You've used 38 entries,
+You've used 40 entries,
             2118 wiz_defined-function locations,
-            680 strings with 8609 characters,
-and the built_in function-call counts, 9434 in all, are:
-= -- 923
-> -- 441
+            688 strings with 8930 characters,
+and the built_in function-call counts, 9868 in all, are:
+= -- 967
+> -- 455
 < -- 9
-+ -- 180
-- -- 140
-* -- 464
-:= -- 1648
-add.period$ -- 142
-call.type$ -- 38
-change.case$ -- 183
++ -- 186
+- -- 144
+* -- 476
+:= -- 1722
+add.period$ -- 150
+call.type$ -- 40
+change.case$ -- 191
 chr.to.int$ -- 0
-cite$ -- 39
-duplicate$ -- 308
-empty$ -- 792
-format.name$ -- 140
-if$ -- 1989
+cite$ -- 41
+duplicate$ -- 322
+empty$ -- 836
+format.name$ -- 144
+if$ -- 2085
 int.to.chr$ -- 0
-int.to.str$ -- 38
+int.to.str$ -- 40
 missing$ -- 5
-newline$ -- 220
-num.names$ -- 74
-pop$ -- 281
+newline$ -- 232
+num.names$ -- 78
+pop$ -- 297
 preamble$ -- 1
-purify$ -- 146
+purify$ -- 152
 quote$ -- 0
-skip$ -- 245
+skip$ -- 257
 stack$ -- 0
-substring$ -- 216
-swap$ -- 46
+substring$ -- 226
+swap$ -- 48
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 150
+type$ -- 158
 warning$ -- 1
-while$ -- 77
-width$ -- 40
-write$ -- 449
+while$ -- 81
+width$ -- 42
+write$ -- 473
 (There was 1 warning)

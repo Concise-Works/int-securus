@@ -362,6 +362,9 @@ INPUT .\Sections\network\osi_tcp.png
 INPUT .\Sections\network\ip_address.png
 INPUT .\Sections\network\ip_address.png
 INPUT .\Sections\network\ip_address.png
+INPUT .\Sections\network\subnetting.png
+INPUT .\Sections\network\subnetting.png
+INPUT .\Sections\network\subnetting.png
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl

@@ -34,6 +34,14 @@ CertBros.
 \newblock YouTube, n.d.
 \newblock Accessed November 2024.
 
+\bibitem{eastcharmer_vlsm_subnetting}
+East Charmer.
+\newblock Easy vlsm subnetting | step by step vlsm.
+\newblock
+  \url{https://www.youtube.com/watch?v=IgthYZ9N1vs&ab_channel=EastCharmer},
+  n.d.
+\newblock Accessed November 2024.
+
 \bibitem{ibm_osi_model}
 Chrystal~R. China and Michael Goodwin.
 \newblock What is the osi model?
@@ -169,6 +177,14 @@ T.~Narten, E.~Nordmark, W.~Simpson, and H.~Soliman.
 \newblock Technical Report RFC 4861, Internet Engineering Task Force (IETF),
   September 2007.
 \newblock Standards Track, Obsoletes RFC 2461.
+
+\bibitem{petryschuk_types_of_networks}
+Steve Petryschuk.
+\newblock Types of networks: Lan, wan, man, and more.
+\newblock
+  \url{https://www.auvik.com/franklyit/blog/types-of-networks/?utm_source=chatgpt.com},
+  n.d.
+\newblock Accessed November 2024.
 
 \bibitem{postel_internet_protocol}
 J.~Postel.

@@ -1,18 +1,18 @@
 # Fdb version 4
-["bibtex main"] 1732856552.10523 "main.aux" "main.bbl" "main" 1732856566.2996 0
-  "./refs.bib" 1732853775 18542 8e50d00487dcaea64e7403699c78d3b4 ""
+["bibtex main"] 1732864444.40642 "main.aux" "main.bbl" "main" 1732864471.36376 0
+  "./refs.bib" 1732864144 19301 d316cc4fa363c5ddb5b400420a4618aa ""
   "C:/Users/tuber/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1732856554 8444 18ba4978d938ffca2d4b43231c2d3f5d "xelatex"
+  "main.aux" 1732864468 8739 1bccae25b2bccf8ed8ff8646168cfecf "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1732856563.1396 "main.xdv" "main.pdf" "main" 1732856566.32874 0
-  "main.xdv" 1732856554 308936 ee2a85392801bc74615c520fa41170e5 "xelatex"
+["xdvipdfmx"] 1732864469.71247 "main.xdv" "main.pdf" "main" 1732864471.37372 0
+  "main.xdv" 1732864468 347064 f9e1f2c998bcdd33b49cf23051b6a0cb "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1732856552.47317 "c:/Users/tuber/Documents/int-securus/int-securus/main.tex" "main.xdv" "main" 1732856566.30054 0
+["xelatex"] 1732864466.8756 "c:/Users/tuber/Documents/int-securus/int-securus/main.tex" "main.xdv" "main" 1732864471.36407 0
   "C:/Users/tuber/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1723738631 37603628 4b89c78e8114255c8860ac2ad127ce4e ""
   "C:/Users/tuber/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136790254 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "C:/Users/tuber/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -194,14 +194,15 @@
   "Configs/boxes.tex" 1732850221 7919 659b37d1df9c1ca94071d213e3ba389d ""
   "Configs/configs.tex" 1732854356 5636 a4cfcf3679c7250fe2e1aa7392699402 ""
   "Sections/network/ip_address.png" 1732855982 196533 cfc6d4053659758c40a133ca447f272c ""
-  "Sections/network/net.tex" 1732856548 19556 c770f6cf520c5e420483d20b7a3b827a ""
-  "Sections/network/osi_tcp.png" 1732828585 119001 e6aee6e4db1426591796baaa8d6b1d3f ""
+  "Sections/network/net.tex" 1732864466 23355 c09d83b3db87b6b785e12adc33967dd7 ""
+  "Sections/network/osi_tcp.png" 1732861255 242224 5bb29284fd473250e4e47d444ed3c8a9 ""
+  "Sections/network/subnetting.png" 1732861644 261481 7cdf3500dcbe44bedf4f08fa6e3e278c ""
   "c:/Users/tuber/Documents/int-securus/int-securus/main.tex" 1732853565 1368 1b21d244d2e1121b46fcdbb8956786aa ""
-  "main.aux" 1732856554 8444 18ba4978d938ffca2d4b43231c2d3f5d "xelatex"
-  "main.bbl" 1732856552 7938 9f0a048231aac4846bfa39940204a5e2 "bibtex main"
-  "main.out" 1732856554 745 04cd50862da16596295cdda3ed2d9393 "xelatex"
+  "main.aux" 1732864468 8739 1bccae25b2bccf8ed8ff8646168cfecf "xelatex"
+  "main.bbl" 1732864444 8437 36b2f41d36184f89b37593bfed0e2dc9 "bibtex main"
+  "main.out" 1732864468 745 04cd50862da16596295cdda3ed2d9393 "xelatex"
   "main.tex" 1732853565 1368 1b21d244d2e1121b46fcdbb8956786aa ""
-  "main.toc" 1732856554 416 788b45e4d21f01a7b3c760aa44b0c5aa "xelatex"
+  "main.toc" 1732864468 416 b8ca429db243f681175e0cfe75f3b12b "xelatex"
   (generated)
   "main.aux"
   "main.log"

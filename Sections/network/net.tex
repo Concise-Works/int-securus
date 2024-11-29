@@ -370,11 +370,49 @@ Consider the IP address \texttt{192.168.2.12/26} and its binary \texttt{11000000
     \label{fig:subnetting}
 \end{figure}
 \noindent
+\begin{Def}[Common Types of Area Networks (ANs)]
 
-\begin{Example}[CIDR Example]
+    \textbf{PAN (Personal Area Network)}: A network for personal devices, such as smartphones, smartwatches, or earbuds, with a short range (typically a few meters) using technologies like Bluetooth or infrared.\\
+
+    \noindent
+    \textbf{LAN (Local Area Network)}: Connects devices within a small area, such as a home, office, or school, enabling high-speed communication and resource sharing.\\
+
+    \noindent
+    \textbf{WLAN (Wireless Local Area Network)}: A wireless version of LAN that uses Wi-Fi to connect devices within a localized area like a home or office.\\
+
+    \noindent
+    \textbf{CAN (Campus Area Network)}: A network that connects multiple LANs across a limited geographical area, such as a university campus or corporate facility, for resource sharing and communication.\\
+
+    \noindent
+    \textbf{MAN (Metropolitan Area Network)}: Covers a larger area than a LAN, typically a city or metropolitan region, connecting multiple LANs or CANs via high-speed infrastructure like fiber optics.\\
+
+    \noindent
+    \textbf{WAN (Wide Area Network)}: Connects LANs, MANs, or other networks over large geographical areas, such as countries or continents. The internet is the largest WAN example.\\
+
+    \noindent
+    \textbf{SAN (Storage Area Network)}: A high-speed network that provides access to storage devices for data centers, ensuring fast and reliable storage management.\\
+
+    \noindent
+    \textbf{EPN (Enterprise Private Network)}: A private network created by organizations to connect their various locations securely, often including VPNs for remote access.\\
+
+    \noindent
+    \textbf{VPN (Virtual Private Network)}: Creates a secure, encrypted connection over public networks, like the internet, to allow users to access private networks remotely.\\
+
+    \noindent
+    \textbf{HAN (Home Area Network)}: A network within a home environment, connecting personal devices like computers, printers, and smart home gadgets.\\
+
+    \noindent
+    \textbf{GAN (Global Area Network)}: A large-scale network that connects multiple WANs and supports worldwide communication, with the internet as its most prominent example.
+
+    \hfill \cite{petryschuk_types_of_networks}
+\end{Def}
+
+\newpage 
+
+\begin{Example}[Subnetting a Network via VLSM]
 
 
-Consider the FLSM below:
+Consider the FLSM below, which all have 62 hosts per network:
 \[
 \begin{array}{|c|c|c|}
 \hline
@@ -385,6 +423,27 @@ Consider the FLSM below:
 192.168.100.192 & .193 - .254 & .255 \\ \hline
 \end{array}
 \]
+\noindent
+Below illustrates this network, where a router of base address \texttt{192.168.1.0/24},
+connects four LANs:\\
+
+\hspace{4em}
+\includegraphics[width=0.7\textwidth]{Sections/network/subnetting.png}\\
+
+\noindent
+\textbf{Subnetting:} Process each LAN from largest to smallest, Select the nearest block size, identify the network, host, and broadcast addresses.
+Since there is a subnet mask of /24, blocks $[128, 64, 32, 16, 8, 4, 2, 1]$ are available. This is the case as 
+$2^8 = 256$. If a LAN has 129 hosts, that LAN will occupy all 254 addresses (as x.x.x.0 and x.x.x.255 are reserved).\\
+\begin{enumerate}
+    \item \textbf{LAN$_2$}: 29 hosts $\Rightarrow$ Block size 32. Network: \texttt{x.0}, Broadcast: \texttt{x.31}, Hosts: \texttt{x.1-x.30}.
+    \item \textbf{LAN$_3$}: 25 hosts $\Rightarrow$ Block size 32. Network: \texttt{x.32}, Broadcast: \texttt{x.63}, Hosts: \texttt{x.33-x.62}.
+    \item \textbf{LAN$_4$}: 13 hosts $\Rightarrow$ Block size 16. Network: \texttt{x.64}, Broadcast: \texttt{x.79}, Hosts: \texttt{x.65-x.78}.
+    \item \textbf{LAN$_1$}: 8 hosts $\Rightarrow$ Block size 16. Network: \texttt{x.80}, Broadcast: \texttt{x.95}, Hosts: \texttt{x.81-x.94}.
+\end{enumerate}
+
+\noindent
+8 hosts need occupy 16, as a block size of 8 only has 6 usable addresses. The computed subnet now only occupies addresses 
+\texttt{x.0-x.95}, leaving room for additional LANs \cite{eastcharmer_vlsm_subnetting}. 
 
 \end{Example}
     
