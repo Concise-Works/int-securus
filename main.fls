@@ -354,6 +354,9 @@ INPUT .\Sections\network\net.tex
 INPUT .\Sections\network\net.tex
 INPUT .\Sections\network\net.tex
 INPUT Sections\network\net.tex
+INPUT .\Sections\network\osi_tcp.png
+INPUT .\Sections\network\osi_tcp.png
+INPUT .\Sections\network\osi_tcp.png
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl

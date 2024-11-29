@@ -22,15 +22,46 @@ M.~Bishop.
 \newblock Request for Comments, June 2022.
 \newblock Category: Standards Track.
 
+\bibitem{certbros_ospf_explained}
+CertBros.
+\newblock Ospf explained | step by step.
+\newblock YouTube, n.d.
+\newblock Accessed November 2024.
+
+\bibitem{ibm_osi_model}
+Chrystal~R. China and Michael Goodwin.
+\newblock What is the osi model?
+\newblock IBM Think, June 2024.
+\newblock Published: 11 June 2024.
+
 \bibitem{cloudflare_client_server}
 {Cloudflare Learning Center}.
 \newblock What do client side and server side mean?, n.d.
 \newblock Accessed: 2024-11-27.
 
+\bibitem{cloudflare_autonomous_system}
+{Cloudflare Learning Center}.
+\newblock What is an autonomous system? | what are asns?
+\newblock Cloudflare, n.d.
+\newblock Accessed November 2024.
+
 \bibitem{cloudflare_internet_protocol}
 {Cloudflare Learning Center}.
 \newblock What is internet protocol (ip)?, n.d.
 \newblock Accessed: 2024-11-27.
+
+\bibitem{cloudflare_routing}
+{Cloudflare Learning Center}.
+\newblock What is routing? | ip routing.
+\newblock Cloudflare, n.d.
+\newblock Accessed November 2024.
+
+\bibitem{deering_ipv6_specification}
+S.~Deering and R.~Hinden.
+\newblock Internet protocol, version 6 (ipv6) specification.
+\newblock Technical Report RFC 8200, Internet Engineering Task Force (IETF),
+  July 2017.
+\newblock Internet Standard 86, obsoletes RFC 2460.
 
 \bibitem{examplebook}
 John Doe.
@@ -62,6 +93,53 @@ Roy~T. Fielding, Mark Nottingham, and Julian Reschke.
 \newblock {HTTP Semantics}.
 \newblock RFC 9110, June 2022.
 
+\bibitem{heimlicher_e2e_hbh}
+Simon Heimlicher, Pavan Nuggehalli, and Martin May.
+\newblock End-to-end vs. hop-by-hop transport.
+\newblock In {\em Proceedings of the ACM SIGMETRICS}. Computer Engineering and
+  Networks Laboratory, ETH Zurich, Switzerland; Centre for Electronics Design
+  and Technology, Indian Institute of Science, Bangalore, India, 2007.
+\newblock Accessed November 2024.
+
+\bibitem{javatpoint_rip_protocol}
+{Javatpoint}.
+\newblock Rip protocol.
+\newblock Javatpoint, n.d.
+\newblock Accessed November 2024.
+
+\bibitem{kanade_osi_model}
+Vijay Kanade.
+\newblock What is the osi model? definition, layers, and importance.
+\newblock Spiceworks, November 2022.
+\newblock Accessed November 2024.
+
+\bibitem{kurose_link_state_routing}
+Jim Kurose.
+\newblock Computer networks and the internet: Routing algorithms and link state
+  routing.
+\newblock YouTube, n.d.
+\newblock Video presentation for Computer Networking: A Top-Down Approach (8th
+  edition), J.F. Kurose and K.W. Ross, Pearson, 2020. Taught at University of
+  Massachusetts Amherst.
+
+\bibitem{leonard_osi_model}
+Samson Leonard.
+\newblock Lecture 1: The osi model.
+\newblock SlidePlayer, 2014.
+\newblock Modified over 9 years ago. References: TCP/IP Protocol Suite, 4th
+  Edition (Chapter 2).
+
+\bibitem{info12060246}
+Kwun-Hung Li and Kin-Yeung Wong.
+\newblock Empirical analysis of ipv4 and ipv6 networks through dual-stack
+  sites.
+\newblock {\em Information}, 12(6), 2021.
+
+\bibitem{Rayes2022}
+Ammar Rayes and Samer Salam.
+\newblock {\em The Internet in IoT}, pages 35--62.
+\newblock Springer International Publishing, Cham, 2022.
+
 \bibitem{rfc}
 Martin Thomson and Francesca Palombini.
 \newblock The rfc series and rfc editor.
@@ -81,5 +159,11 @@ Martin Thomson and Francesca Palombini.
 {World Wide Web Consortium (W3C)}.
 \newblock Hypertext transfer protocol (http) as implemented in w3, n.d.
 \newblock Accessed: 2024-11-27.
+
+\bibitem{yasar_tcpip}
+Kinza Yasar, Mary~E. Shacklett, and Amy Novotny.
+\newblock What is tcp/ip?
+\newblock TechTarget, September 2024.
+\newblock Last updated September 2024.
 
 \end{thebibliography}
