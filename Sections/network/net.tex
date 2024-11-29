@@ -433,7 +433,7 @@ connects four LANs:\\
 \noindent
 \textbf{Subnetting:} Process each LAN from largest to smallest, Select the nearest block size, identify the network, host, and broadcast addresses.
 Since there is a subnet mask of /24, blocks $[128, 64, 32, 16, 8, 4, 2, 1]$ are available. This is the case as 
-$2^8 = 256$. If a LAN has 129 hosts, that LAN will occupy all 254 addresses (as x.x.x.0 and x.x.x.255 are reserved).\\
+$2^8 = 256$. If a LAN has 129 hosts, that LAN will occupy all 256 addresses.\\
 \begin{enumerate}
     \item \textbf{LAN$_2$}: 29 hosts $\Rightarrow$ Block size 32. Network: \texttt{x.0}, Broadcast: \texttt{x.31}, Hosts: \texttt{x.1-x.30}.
     \item \textbf{LAN$_3$}: 25 hosts $\Rightarrow$ Block size 32. Network: \texttt{x.32}, Broadcast: \texttt{x.63}, Hosts: \texttt{x.33-x.62}.
