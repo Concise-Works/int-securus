@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.15)  29 NOV 2024 10:48
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.15)  29 NOV 2024 11:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1379,142 +1379,142 @@ Package mdframed Info: Not enough space on this page on input line 246.
 Package mdframed Info: mdframed works in twoside mode on input line 248.
 Package mdframed Info: mdframed works in twoside mode on input line 252.
 
-Overfull \hbox (23.32455pt too wide) in paragraph at lines 263--263
+Overfull \hbox (23.32455pt too wide) in paragraph at lines 262--262
 []|\TU/lmr/bx/n/10 Class| 
  []
 
 
-Overfull \hbox (2.8618pt too wide) in paragraph at lines 263--263
+Overfull \hbox (2.8618pt too wide) in paragraph at lines 262--262
 []|\TU/lmr/bx/n/10 Binary
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
+Underfull \hbox (badness 10000) in paragraph at lines 262--262
 []|\TU/lmr/bx/n/10 Range
  []
 
 
-Overfull \hbox (4.65456pt too wide) in paragraph at lines 264--264
+Overfull \hbox (4.65456pt too wide) in paragraph at lines 263--263
 []|\TU/lmr/m/n/10 A| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--264
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
 []|\TU/lmr/m/n/10 1.0.0.0 to
  []
 
 
-Overfull \hbox (4.23456pt too wide) in paragraph at lines 265--265
+Overfull \hbox (4.23456pt too wide) in paragraph at lines 264--264
 []|\TU/lmr/m/n/10 B| 
  []
 
 
-Underfull \hbox (badness 5519) in paragraph at lines 265--265
+Underfull \hbox (badness 5519) in paragraph at lines 264--264
 []|\TU/lmr/m/n/10 128.0.0.0 to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 264--264
 []|\TU/lmr/m/n/10 Unicast (medium
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--266
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
 []|\TU/lmr/m/n/10 For medium-sized net-
  []
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 265--266
+Underfull \hbox (badness 2073) in paragraph at lines 264--265
 \TU/lmr/m/n/10 works; 16 bits for the
  []
 
 
-Overfull \hbox (4.37456pt too wide) in paragraph at lines 266--266
+Overfull \hbox (4.37456pt too wide) in paragraph at lines 265--265
 []|\TU/lmr/m/n/10 C| 
  []
 
 
-Underfull \hbox (badness 5519) in paragraph at lines 266--266
+Underfull \hbox (badness 5519) in paragraph at lines 265--265
 []|\TU/lmr/m/n/10 192.0.0.0 to
  []
 
 
-Overfull \hbox (1.4345pt too wide) in paragraph at lines 266--266
+Overfull \hbox (1.4345pt too wide) in paragraph at lines 265--265
 \TU/lmr/m/n/10 223.255.255.0| 
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 266--267
+Underfull \hbox (badness 1668) in paragraph at lines 265--266
 []|\TU/lmr/m/n/10 For small networks; 24
  []
 
 
-Overfull \hbox (4.79456pt too wide) in paragraph at lines 267--267
+Overfull \hbox (4.79456pt too wide) in paragraph at lines 266--266
 []|\TU/lmr/m/n/10 D| 
  []
 
 
-Underfull \hbox (badness 5519) in paragraph at lines 267--267
+Underfull \hbox (badness 5519) in paragraph at lines 266--266
 []|\TU/lmr/m/n/10 224.0.0.0 to
  []
 
 
-Overfull \hbox (11.4345pt too wide) in paragraph at lines 267--267
+Overfull \hbox (11.4345pt too wide) in paragraph at lines 266--266
 \TU/lmr/m/n/10 239.255.255.255| 
  []
 
 
-Overfull \hbox (3.96455pt too wide) in paragraph at lines 268--268
+Overfull \hbox (3.96455pt too wide) in paragraph at lines 267--267
 []|\TU/lmr/m/n/10 E| 
  []
 
 
-Underfull \hbox (badness 5519) in paragraph at lines 268--268
+Underfull \hbox (badness 5519) in paragraph at lines 267--267
 []|\TU/lmr/m/n/10 240.0.0.0 to
  []
 
 
-Overfull \hbox (11.4345pt too wide) in paragraph at lines 268--268
+Overfull \hbox (11.4345pt too wide) in paragraph at lines 267--267
 \TU/lmr/m/n/10 255.255.255.255| 
  []
 
 
-Underfull \hbox (badness 7796) in paragraph at lines 268--268
+Underfull \hbox (badness 7796) in paragraph at lines 267--267
 []|\TU/lmr/m/n/10 Experimental and
  []
 
 
-Overfull \hbox (4.2138pt too wide) in paragraph at lines 261--270
+Overfull \hbox (4.2138pt too wide) in paragraph at lines 260--269
  [][] 
  []
 
 
 
 [28]
-Package mdframed Info: mdframed works in twoside mode on input line 284.
-Package mdframed Info: Not enough space on this page on input line 288.
-Package mdframed Info: mdframed works in twoside mode on input line 290.
-Package mdframed Info: mdframed works in twoside mode on input line 298.
+Package mdframed Info: mdframed works in twoside mode on input line 283.
+Package mdframed Info: Not enough space on this page on input line 287.
+Package mdframed Info: mdframed works in twoside mode on input line 289.
+Package mdframed Info: mdframed works in twoside mode on input line 297.
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--312
+Underfull \hbox (badness 10000) in paragraph at lines 309--311
 
  []
 
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 316.
-Package mdframed Info: mdframed works in twoside mode on input line 323.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 315.
+Package mdframed Info: mdframed works in twoside mode on input line 322.
 
 
 [29]
-Package mdframed Info: mdframed works in twoside mode on input line 336.
-Package mdframed Info: Not enough space on this page on input line 361.
+Package mdframed Info: mdframed works in twoside mode on input line 335.
+Package mdframed Info: Not enough space on this page on input line 360.
 
-Overfull \hbox (2.95428pt too wide) in paragraph at lines 362--364
+Overfull \hbox (2.95428pt too wide) in paragraph at lines 361--363
 \TU/lmr/m/n/10 Consider the IP address \TU/lmtt/m/n/10 192.168.2.12/26 \TU/lmr/m/n/10 and its binary \TU/lmtt/m/n/10 11000000.10101000.00000010.00001100\TU/lmr/m/n/10 : 
  []
 
@@ -1523,79 +1523,79 @@ File: Sections/network/ip_address.png Graphic file (type bmp)
 
 
 [30]
-Package mdframed Info: mdframed works in twoside mode on input line 374.
+Package mdframed Info: mdframed works in twoside mode on input line 373.
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 377--379
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--382
+Underfull \hbox (badness 10000) in paragraph at lines 376--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--385
+Underfull \hbox (badness 10000) in paragraph at lines 379--381
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--388
+Underfull \hbox (badness 10000) in paragraph at lines 382--384
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--391
+Underfull \hbox (badness 10000) in paragraph at lines 385--387
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--394
+Underfull \hbox (badness 10000) in paragraph at lines 388--390
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--397
+Underfull \hbox (badness 10000) in paragraph at lines 391--393
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--400
+Underfull \hbox (badness 10000) in paragraph at lines 394--396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--403
+Underfull \hbox (badness 10000) in paragraph at lines 397--399
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--402
 
  []
 
 
 
 [31]
-Package mdframed Info: mdframed works in twoside mode on input line 412.
+Package mdframed Info: mdframed works in twoside mode on input line 411.
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--429
+Underfull \hbox (badness 10000) in paragraph at lines 424--428
 
  []
 
 File: Sections/network/subnetting.png Graphic file (type bmp)
 <Sections/network/subnetting.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--432
+Underfull \hbox (badness 10000) in paragraph at lines 429--431
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--438
+Underfull \hbox (badness 10000) in paragraph at lines 432--437
 
  []
 
-Package mdframed Info: Not enough space on this page on input line 448.
+Package mdframed Info: Not enough space on this page on input line 447.
 ) (main.bbl
 
 [32]
@@ -1631,4 +1631,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  107i,20n,110p,610b,961s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (35 pages, 690448 bytes).
+Output written on main.xdv (35 pages, 690736 bytes).
