@@ -4,6 +4,12 @@
 {DoD standard Internet Protocol}.
 \newblock RFC 760, January 1980.
 
+\bibitem{awati_vlsm}
+Rahul Awati.
+\newblock Variable length subnet mask (vlsm).
+\newblock TechTarget, October 2021.
+\newblock Last updated October 2021, accessed November 2024.
+
 \bibitem{rfc7540}
 M.~Belshe, R.~Peon, and M.~Thomson.
 \newblock {Hypertext Transfer Protocol Version 2 (HTTP/2)}.
@@ -39,6 +45,12 @@ Chrystal~R. China and Michael Goodwin.
 \newblock What do client side and server side mean?, n.d.
 \newblock Accessed: 2024-11-27.
 
+\bibitem{cloudflare_subnet}
+{Cloudflare Learning Center}.
+\newblock What is a subnet? | how subnetting works.
+\newblock Cloudflare, n.d.
+\newblock Accessed November 2024.
+
 \bibitem{cloudflare_autonomous_system}
 {Cloudflare Learning Center}.
 \newblock What is an autonomous system? | what are asns?
@@ -62,11 +74,6 @@ S.~Deering and R.~Hinden.
 \newblock Technical Report RFC 8200, Internet Engineering Task Force (IETF),
   July 2017.
 \newblock Internet Standard 86, obsoletes RFC 2460.
-
-\bibitem{examplebook}
-John Doe.
-\newblock {\em Example Book}.
-\newblock Example Publisher, 2020.
 
 \bibitem{multiplexing_networkencyclopedia}
 {Editorial Team}.
@@ -93,6 +100,14 @@ Roy~T. Fielding, Mark Nottingham, and Julian Reschke.
 \newblock {HTTP Semantics}.
 \newblock RFC 9110, June 2022.
 
+\bibitem{fuller_cidr_rfc1519}
+V.~Fuller, T.~Li, J.~Yu, and K.~Varadhan.
+\newblock Classless inter-domain routing (cidr): An address assignment and
+  aggregation strategy.
+\newblock Technical Report RFC 1519, Internet Engineering Task Force (IETF),
+  September 1993.
+\newblock Accessed November 2024.
+
 \bibitem{heimlicher_e2e_hbh}
 Simon Heimlicher, Pavan Nuggehalli, and Martin May.
 \newblock End-to-end vs. hop-by-hop transport.
@@ -100,6 +115,12 @@ Simon Heimlicher, Pavan Nuggehalli, and Martin May.
   Networks Laboratory, ETH Zurich, Switzerland; Centre for Electronics Design
   and Technology, Indian Institute of Science, Bangalore, India, 2007.
 \newblock Accessed November 2024.
+
+\bibitem{ibm_ipv4_ipv6_formats}
+{IBM Documentation}.
+\newblock Ipv4 and ipv6 address formats.
+\newblock IBM Documentation, January 2022.
+\newblock Last updated 2022-01-18, accessed November 2024.
 
 \bibitem{javatpoint_rip_protocol}
 {Javatpoint}.
@@ -134,6 +155,29 @@ Kwun-Hung Li and Kin-Yeung Wong.
 \newblock Empirical analysis of ipv4 and ipv6 networks through dual-stack
   sites.
 \newblock {\em Information}, 12(6), 2021.
+
+\bibitem{narten_rfc4861}
+T.~Narten, E.~Nordmark, W.~Simpson, and H.~Soliman.
+\newblock Neighbor discovery for ip version 6 (ipv6).
+\newblock Technical Report RFC 4861, Internet Engineering Task Force (IETF),
+  September 2007.
+\newblock Standards Track, Obsoletes RFC 2461.
+
+\bibitem{postel_internet_protocol}
+J.~Postel.
+\newblock Internet protocol - darpa internet program protocol specification.
+\newblock Technical Report RFC 791, Internet Engineering Task Force (IETF),
+  September 1981.
+\newblock Internet Standard 5, obsoletes RFC 760, updated by RFCs 1349, 2474,
+  and 6864.
+
+\bibitem{rfc791}
+J.~Postel.
+\newblock Internet protocol: Darpa internet program protocol specification.
+\newblock Technical Report RFC 791, Defense Advanced Research Projects Agency
+  (DARPA), Information Sciences Institute, University of Southern California,
+  Marina del Rey, CA, USA, September 1981.
+\newblock Obsoleted by RFC 1349, RFC 2474, RFC 6864.
 
 \bibitem{Rayes2022}
 Ammar Rayes and Samer Salam.

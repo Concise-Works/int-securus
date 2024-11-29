@@ -1,7 +1,14 @@
+\vspace{-1em}
 \section{The Internet}
 
 \noindent
 Terminology and concepts of the internet, which will be used throughout this text.
+
+\begin{Def}[Protocol]
+
+    A \textbf{protocol} is a set of rules which govern the exchange of data between devices. 
+    Protocols define the format, timing, sequencing, and error control of data transmission \cite{rfc791}.
+\end{Def}
 
 \begin{Def}[Internet]
 
@@ -192,12 +199,16 @@ When IP addresses began
 
 \newpage
 
+\begin{Def}[Router Advertising]
+
+    When routers inform each other of their existence and the networks they can reach \cite{narten_rfc4861}.
+\end{Def}
 \begin{Def}[Routing Protocols]
     
     \begin{itemize}
         \item \textbf{IP} (Internet Protocol): The primary protocol for routing data across the internet.
-        \item \textbf{BGP} (Border Gateway Protocol): The protocol for routing data between autonomous systems (AS). 
-        an AS is a collection of IP networks and routers under the control of a single entity (e.g., an ISP (Internet Service Provider)).
+        \item \textbf{BGP} (Border Gateway Protocol): The protocol for routing data between \textbf{Autonomous Systems} (AS). 
+        an AS is a collection of IP networks and routers under the control of a single entity (e.g., an \textbf{ISP} (Internet Service Provider)).
         These may only connect with each other if they have a mutual agreement. ASes identify themselves to 
         external networks using a unique \textbf{Autonomous System Number} (ASN).
         These are unique 16 bit numbers between 1-65534 or 32 bit numbers between 131072-4294967294 (e.g., \texttt{AS12345}) \cite{cloudflare_autonomous_system}.
@@ -205,10 +216,9 @@ When IP addresses began
         of algorithms which determine the best path, based on the topology of a network graph \cite{kurose_link_state_routing}.
         It is also an \textbf{IGP} (Interior Gateway Protocol), meaning it operates within a single AS. It does so by sending out \textbf{LSAs} (Link State Advertisements) to other routers in the AS.
         Then routers in the system build a \textbf{LSADB} (Link State Advertisement Database) of the network topology. Then a shortest path algorithm is run to determine the best path to each network \cite{certbros_ospf_explained}.
-        \item \textbf{RIP} (Routing Information Protocol): One of the oldest distance-vector routing protocols, RIP employs hop count as a routing metric, with a maximum allowable hop count of 15, limiting the size of networks it can support.
+        \item \textbf{RIP} (Routing Information Protocol): RIP employs hop count as a routing metric, with a maximum allowable hop count of 15 (network size limitation).
         It operates as an \textbf{IGP} within a single AS, periodically broadcasting the entire routing table to neighboring routers every 30 seconds,
-        which can lead to slower convergence and higher bandwidth usage compared to more advanced protocols.
-        Due to these limitations, RIP is generally used in smaller networks and has largely been supplanted by more efficient protocols like OSPF and EIGRP in larger, more complex networks \cite{javatpoint_rip_protocol}.
+        which can lead to slower convergence and higher bandwidth usage compared to other protocols. RIP is largely deprecated \cite{javatpoint_rip_protocol}.
     \end{itemize}
 \end{Def}
 
@@ -216,24 +226,134 @@ When IP addresses began
 
     \textbf{IP addresses} are unique identifiers for devices on a network. 
     There are two versions of IP addresses, \textbf{IPv4} and \textbf{IPv6}.
-    IPv4 A 32-bit address, employed since 1983 with a maximum of $2^{32}$ addresses, quickly exhausted all available addresses by the 2010s \cite{info12060246}.
-    IPv6 is a 128-bit address, introduced in 1998, with a maximum of $2^{128}$ addresses, in an attempt to address this shortage \cite{deering_ipv6_specification}.
+    IPv4 A 32-bit address ($2^{32}$ addresses), employed since 1983, quickly exhausted all available addresses by the 2010s \cite{info12060246}.
+    IPv6 is a 128-bit address ($2^{128}$ addresses), introduced in 1998 , in an attempt to address this shortage \cite{deering_ipv6_specification}\cite{ibm_ipv4_ipv6_formats}.
     For example,
     \begin{itemize}
-        \item \textbf{IPv4}: \texttt{192.168.1.1} (Decimal Representation)
-        \item \textbf{IPv6}: \texttt{2001:0db8:85a3:0000:0000:8a2e:0370:7334} (Hexadecimal Representation)
+        \item \textbf{IPv4}: a decimal octet ``$x.x.x.x$'': $x \in [0, 255]$ (e.g., \texttt{192.168.1.1}).
+        \item \textbf{IPv6}: a hexadecimal segment ``$y:y:y:y:y:y:y:y$'': $y\in [0, FFFF]$ \\
+         (e.g., \texttt{2001:0db8:85a3:0000:0000:8a2e:0370:7334}).
     \end{itemize}
-    \noindent
 \end{Def}
 
 \newpage
 
-
-\begin{Def}[Subnets]
+\begin{Def}[Subnetting]
 
     Instead of a large monolith network of routers, networks can be divided into 
     smaller networks called \textbf{subnets}. I.e., Instead of passing data to every device on a network, routers forward data to a representative device on each subnet.
+    \hfill \cite{cloudflare_subnet}
 \end{Def}
+\begin{Def}[Subnet Masking]
+
+    A \textbf{subnet mask} defines which part of an IP address identifies the \textbf{network} and which part identifies the \textbf{host}.
+\end{Def}
+\begin{Def}[Classful Network]
+
+    In the beginning, the first octet of an IPv4 address determined the network class---only allowing for 256 networks.
+    The RFC\#791 published in 1981 introduced \textbf{Classful Networks} \cite{postel_internet_protocol}. 
+    It uses the first three bits of the first octet's binary representation as a subnet mask to determine a class ranging from A-E.
+    Th
+\end{Def}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{@{}p{.1cm}p{1.1cm}p{2cm}p{3cm}p{4cm}@{}}
+    \toprule
+    \textbf{Class} & \textbf{Binary Prefix} & \textbf{Range (Decimal)} & \textbf{Purpose} & \textbf{Details} \\ \midrule
+    A              & \texttt{0xx}           & 1.0.0.0 to 126.0.0.0     & Unicast (large networks) & For large organizations; 8 bits for the network, 24 for hosts. \\
+    B              & \texttt{10x}           & 128.0.0.0 to 191.255.0.0 & Unicast (medium networks) & For medium-sized networks; 16 bits for the network, 16 for hosts. \\
+    C              & \texttt{110}           & 192.0.0.0 to 223.255.255.0 & Unicast (small networks) & For small networks; 24 bits for the network, 8 for hosts. \\
+    D              & \texttt{1110}          & 224.0.0.0 to 239.255.255.255 & Multicast & Reserved for multicast addressing; not for general use. \\
+    E              & \texttt{1111}          & 240.0.0.0 to 255.255.255.255 & Experimental and future use & Reserved for research and development; not assigned for standard use. \\ \bottomrule
+    \end{tabular}
+    \caption{Overview of IPv4 Address Classes}
+    \label{tab:ipv4_classes}
+\end{table}
+
+
+
+
+
+
+\newpage 
+
+\noindent 
+
+\begin{Def}[Fixed Length Subnet Masking (FLSM)]
+
+    \textbf{Fixed Length Subnet Masking} (FLSM) is a technique which divides a network into equal-sized subnets. This
+    may lead to inefficient use of IP addresses.
+    \hfill \cite{awati_vlsm}
+\end{Def}
+\begin{Def}[Variable Length Subnet Masking (VLSM)]
+
+    \textbf{Variable Length Subnet Masking} (VLSM) is a technique which allows for the creation of subnets with different sizes. 
+    As some ASes may require more IP addresses than others, VLSM allows for more efficient use of IP addresses.
+    \hfill \cite{awati_vlsm}
+\end{Def}
+\noindent
+
+\begin{Def}[Classless Inter-Domain Routing (CIDR)]
+
+    \textbf{Classless Inter-Domain Routing} (CIDR), introduced in 1993 through RFC\#1518 and RFC\#1519 to address IPv4 exhaustion.
+    CIDR replaced class-based subnetting with VLSM.
+
+    \noindent
+    CIDR notation is written as \underline{\texttt{IP Address/Prefix Length} (e.g., \texttt{192.168.1.0/24})}, where:
+    \begin{itemize}
+        \item \texttt{IP Address}: Represents the starting address of the network.
+        \item \texttt{Prefix Length}: The number of bits used for the \textbf{network portion} of the address.\\
+    \end{itemize}
+
+    \vspace{-1em}
+    \noindent
+    For example:\\
+
+        \vspace{-1em}
+        \begin{center}
+            \large
+            \texttt{255.0.0.0\textbf{/8}}; \hspace{.2em} \texttt{255.255.0.0\textbf{/16}}; \hspace{.2em} \texttt{255.255.255.0\textbf{/24}}; \hspace{.2em} \texttt{255.255.255.192\textbf{/26}};
+            \normalsize
+        \end{center}
+    \hfill \cite{fuller_cidr_rfc1519}
+\end{Def}
+
+\begin{Def}[Route Aggregation]
+
+    CIDR introduced \textbf{Route Aggregation} also known as \textbf{Supernetting}, or \textbf{Route Summarization}, is the process of combining multiple routes into a single route advertisement.
+    \textbf{Example}:
+    Consider an organization assigned the following contiguous IP address blocks:
+    \begin{center}
+        \texttt{192.168.\textbf{1}.0/24}; \quad \texttt{192.168.\textbf{2}.0/24}; \quad \texttt{192.168.\textbf{3}.0/24}; \quad \texttt{192.168.\textbf{4}.0/24};
+    \end{center}
+    Each block holding 256 IP addresses with a subnet mask of 255.255.255.0, requiring four routing table entries. 
+    However, these networks share a common prefix: the first 22 bits (\texttt{192.168.0.0/22}), which aggregates to: \texttt{\textbf{192.168.0.0/22}} \cite{fuller_cidr_rfc1519}.
+
+\end{Def}
+\newpage
+
+\begin{Example}[Subnetting Decimal to Binary Conversion]
+
+    Consider the subnet mask \texttt{192.168.2.64/26}. The subnet mask (\#/26) says the first 26 bits are for the network and the remaining 6 bits are hosts (36 bits total).
+\end{Example}
+\noindent
+The below table shows an FLSM example:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{@{}lccc@{}}
+    \toprule
+    \textbf{Network Address} & \textbf{Hosts}   & \textbf{Broadcast Address} \\ \midrule
+    192.168.100.0            & .1 - .62         & .63                        \\
+    192.168.100.64           & .65 - .126       & .127                       \\
+    192.168.100.128          & .129 - .190      & .191                       \\
+    192.168.100.192          & .193 - .254      & .255                       \\ \bottomrule
+    \end{tabular}
+    \caption{Subnet Breakdown: Network Addresses, Host Ranges, and Broadcast Addresses}
+    \label{tab:subnet_breakdown}
+\end{table}
+
+
     
 
 
