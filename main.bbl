@@ -216,6 +216,12 @@ T.~Narten, E.~Nordmark, W.~Simpson, and H.~Soliman.
   September 2007.
 \newblock Standards Track, Obsoletes RFC 2461.
 
+\bibitem{rir_overview}
+Number Resource~Organization (NRO).
+\newblock Regional internet registries (rirs) overview.
+\newblock Website, 2024.
+\newblock Accessed November 28, 2024.
+
 \bibitem{petryschuk_types_of_networks}
 Steve Petryschuk.
 \newblock Types of networks: Lan, wan, man, and more.
@@ -276,6 +282,12 @@ Y.~Rekhter, B.~Moskowitz, D.~Karrenberg, G.J. de~Groot, and E.~Lear.
 \newblock Request for Comments 1918, Internet Engineering Task Force, February
   1996.
 \newblock BCP 5.
+
+\bibitem{rbfs_cgnat}
+RtBrick.
+\newblock Rbfs carrier-grade network address translation overview.
+\newblock Website, 2024.
+\newblock Accessed November 28, 2024.
 
 \bibitem{rfc2663}
 P.~Srisuresh and M.~Holdrege.

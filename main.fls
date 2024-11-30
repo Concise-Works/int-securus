@@ -380,6 +380,12 @@ INPUT .\Sections\network\udp.png
 INPUT .\Sections\network\datagram.png
 INPUT .\Sections\network\datagram.png
 INPUT .\Sections\network\datagram.png
+INPUT .\Sections\network\nat.png
+INPUT .\Sections\network\nat.png
+INPUT .\Sections\network\nat.png
+INPUT .\Sections\network\cgnat.png
+INPUT .\Sections\network\cgnat.png
+INPUT .\Sections\network\cgnat.png
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl

@@ -467,13 +467,13 @@ $2^8 = 256$. If a LAN has 129 hosts, that LAN will occupy all 256 addresses.\\
     \begin{itemize}
         \item \textbf{TCP}: A connection-oriented protocol that ensures reliable communication by establishing a connection before transmitting data. TCP guarantees delivery, maintains packet order, and retransmits lost packets. It is ideal for applications like web browsing (HTTP/HTTPS) and file transfers (FTP). \hfill \cite{rfc793}
         \item \textbf{UDP}: A connectionless protocol that prioritizes speed by sending data without establishing a connection. It does not guarantee delivery, order, or error correction, making it suitable for time-sensitive applications like video streaming, online gaming, and DNS lookups. \hfill \cite{rfc768}
-        \item \textbf{QUIC}: A modern, connection-oriented protocol built on UDP that combines speed with reliability. QUIC provides features like multiplexed streams, faster connection establishment, and built-in encryption, addressing TCP’s latency issues while retaining UDP’s efficiency. It is optimized for HTTP/3 and increasing in use. \hfill \cite{rfc9000}
+        \item \textbf{QUIC}: A modern, connection-oriented protocol built on UDP that combines speed with reliability. QUIC provides features like multiplexed streams, faster connection establishment, and built-in encryption, addressing TCP's latency issues while retaining UDP's efficiency. It is optimized for HTTP/3 and increasing in use. \hfill \cite{rfc9000}
     \end{itemize}
 \end{Def}
 
 \begin{Def}[MAC Address]
 
-    A \textbf{MAC address} (Media Access Control address) is a globally unique identifier assigned to a device’s network interface card (NIC) at the \textbf{network interface layer} of the TCP/IP model. 
+    A \textbf{MAC address} (Media Access Control address) is a globally unique identifier assigned to a device's network interface card (NIC) at the \textbf{network interface layer} of the TCP/IP model. 
     MAC addresses consist of 48 bits, typically represented as six pairs of hexadecimal digits\\
     (e.g., \texttt{00:1A:2B:3C:4D:5E}).
 
@@ -512,7 +512,7 @@ $2^8 = 256$. If a LAN has 129 hosts, that LAN will occupy all 256 addresses.\\
 \begin{Def}[TCP Header]
 
     A \textbf{TCP header}, as defined in RFC\#793, is a component of a TCP segment that contains essential information for reliable data delivery between devices. 
-    Minimum size of 20 bytes and a max 60 bytes with options. It's called a header as it sits \textit{ahead} of the \textbf{payload} (data) in the segment. Eg., [TCP Header (20–60 bytes)] + [Payload (0-65,495 bytes)].
+    Minimum size of 20 bytes and a max 60 bytes with options. It's called a header as it sits \textit{ahead} of the \textbf{payload} (data) in the segment. Eg., [TCP Header (20–60 bytes), Payload (0-65,495 bytes)].
 \hfill \cite{rfc793}
 \end{Def}
 
@@ -646,15 +646,12 @@ $2^8 = 256$. If a LAN has 129 hosts, that LAN will occupy all 256 addresses.\\
     \label{fig:udp_header}
 \end{figure}
 
-
 \newpage
-
 \begin{Def}[IPv4 Packet Header]
 
     An \textbf{IPv4 packet header} as outline in RFC\#791, contains essential information for routing and delivering data across networks. 
     The header consists of several fields, each serving a specific purpose. 
-    The header sits \textit{ahead} of the \textbf{payload} (data) in the packet.\\
-    Eg., [IP Header (20–60 bytes), TCP Header (20–60 bytes), Payload (Variable)]. in a stream of bits. \hfill \cite{rfc791}
+    Eg., [IP Header (20–60 bytes), Transport Header, Payload]. in a stream of bits. \hfill \cite{rfc791}
 \end{Def}
 \begin{figure}[h!]
     \centering
@@ -688,7 +685,7 @@ $2^8 = 256$. If a LAN has 129 hosts, that LAN will occupy all 256 addresses.\\
 \begin{figure}[h!]
     \hspace{-2.5em}
     \includegraphics[width=1.1\textwidth]{Sections/network/datagram.png}
-    \caption{IPv4 Packet Header}
+    \caption{IPv4 Packet Header.}
     \label{fig:ipv4_header}
 \end{figure}
 
@@ -705,21 +702,47 @@ the ball park of 1,500 bytes.
     
 \end{Def}
 
+
 \begin{Def}[Internet Control Message Protocol (ICMP)]
 
-    \textbf{Internet Control Message Protocol (ICMP)} is a supporting protocol used by network devices to communicate error messages and operational information.
+    \textbf{Internet Control Message Protocol (ICMP)} is a supporting protocol used by network devices to communicate error messages and operational information. To name a few:
     \begin{itemize}
         \item \textbf{Destination Unreachable}: Indicates that a packet could not reach its destination.
         \item \textbf{Time Exceeded}: Signals that the packet's \textbf{Time to Live (TTL)} has expired.
-        \item \textbf{Fragmentation Needed}: Informs the sender that the packet is too large for a network segment and cannot be fragmented.
-        \item \textbf{Echo Request and Reply (Ping)}: Used to test connectivity and measure round-trip time between devices. \hfill \cite{rfc792}
+        \item \textbf{Fragmentation Needed}: Informs the sender the packet is too large without fragmenting.
+        \item \textbf{Echo Request and Reply (Ping)}: Tests connectivity between devices. \hfill \cite{rfc792}
     \end{itemize}
+    \noindent
+    For full specifications visit: \href{https://www.iana.org/assignments/icmp-parameters/icmp-parameters.xhtml}{ICMP Parameters}. Note viewing their reference RFCs may be more informative.
 \end{Def}
 
     
 \newpage
+
+\begin{Def}[IPv4 Options]
+
+    The \textbf{IPv4 Options} field is an optional. Every options occupies 1 byte regardless do data\\
+    \hfill (var = variable, `-' = none).
+    
+    \textbf{Common IPv4 Options (class, number, data length (bytes))}:
+    \begin{itemize}
+        \item \textbf{End of Option List (0, 0, -)}: Marks the end of the options field.
+        \item \textbf{No Operation (0, 1, -)}: Used for padding.
+        \item \textbf{Security (0, 2, 11)}: Includes security and compartmentalization details.
+        \item \textbf{Loose Source Routing (0, 3, var)}: Specifies a loose route for pathing.
+        \item \textbf{Internet Timestamp (2, 4, var)}: Records timestamps at each hop.
+        \item \textbf{Strict Source Routing (0, 9, var)}: Specifies an exact route for pathing.
+        \item \textbf{Record Route (0, 7, var)}: Records the route taken by the datagram.
+        \item \textbf{Stream ID (0, 8, 4)}: Identifies the stream of communication.
+    \end{itemize}
+
+    \noindent
+    \textbf{Classes:} \textbf{0}: Control. \textbf{1}: Reserved for future use. \textbf{2}: Debugging and Measurement.\\
+    \textbf{3}: Reserved for future use. \hfill \cite{rfc791}
+\end{Def}
+
 \noindent
-The following solution was implemented to address the exhaustion of IPv4 addresses:
+\underline{\textbf{QUIC Headers} will be introduced later,} as it incorporates uncovered content. The following solution was implemented to address the exhaustion of IPv4 addresses:
 \begin{Def}[Private and Public IP Addresses]
 
     IP addresses are classified as \textbf{private} or \textbf{public} based on their scope and accessibility:
@@ -738,15 +761,104 @@ The following solution was implemented to address the exhaustion of IPv4 address
     \hfill \cite{rfc1918}
 \end{Def}
 
+
 \begin{Def}[Network Address Translation (NAT)]
 
     \textbf{Network Address Translation (NAT)} is a networking technique that translates private IP addresses within a local network to a public IP address for communication over external networks, such as the internet.
     NAT modifies the source IP address in outbound packets and reverses the process for inbound packets, ensuring data is correctly routed to devices within the private network.
 
     NAT enables multiple devices to share a single public IP address,
-    facilitating efficient communication while keeping private IP addresses hidden from external networks.  \hfill \cite{rfc1918}\cite{rfc2663}
+    facilitating efficient communication while keeping private IP addresses hidden from external networks.  \hfill \cite{rfc1918}\cite{rfc2663}   
+\end{Def}
 
-   
+\vspace{-.5em}
+\begin{Def}[Dynamic \& Static NATs and PATs]
+
+    When a device crosses a router into an external network, the router replaces parts of the packet with a public translation.
+    There are \textbf{NATs} and \textbf{Port Address Translations (PATs)}:
+
+    \begin{itemize}
+        \item \textbf{NAT}: Only translates the IP address, leaving the port unchanged.
+        \item \textbf{PAT}: Translates both the IP address and port number (rarely, only the port).
+    \end{itemize}
+
+    \noindent
+    There are two types of configurations for NAT and PAT:
+    \begin{itemize}
+        \item \textbf{Static:} The administrator explicitly defines the translations of IP addresses and ports.
+        \item \textbf{Dynamic:} The administrator defines a pool of public IP addresses and ports, allowing the router to assign them dynamically.
+    \end{itemize}
+
+    \noindent
+    PATs are referred to in RFC\#2663 as \textbf{Network Address Port Translation (NAPT)}. This overall process is also known as \textbf{Overloading} or 
+    \textbf{IP Masquerading}. \hfill \cite{rfc2663}
+
+\end{Def}
+
+\begin{figure}[h!]
+
+    \vspace{-1.25em}
+    \hspace{-1em}
+    \includegraphics[width=1\textwidth]{Sections/network/nat.png}
+    \caption{Static and Dynamic NATs from an internal network to the internet.}
+    \label{fig:nat}
+\end{figure}
+
+\noindent
+Incoming traffic will reverse the process, translating the public IP back into its private mapping. In many 
+cases, an administrator would be an ISP, who distributes public IPs to clients.
+
+\newpage 
+
+\begin{Def}[Regional Internet Registries (RIRs)]
+
+    \textbf{Regional Internet Registries (RIRs)} are non-profit organizations responsible for the allocation, distribution, and management of Internet number resources, including \textbf{IPv4 and IPv6 addresses} and \textbf{Autonomous System Numbers (ASNs)}, within specific geographic regions.
+    
+    \noindent
+    \textbf{Key Functions of RIRs:}
+    \begin{itemize}
+        \item \textbf{Database Management}: Maintain public records documenting the allocation and assignment of Internet number resources.
+        \item \textbf{Policy Development}: Facilitate community-driven processes for creating policies on resource management.
+    \end{itemize}
+
+    \noindent
+    \textbf{The Five RIRs and Their Regions:}
+    \begin{itemize}
+        \item \textbf{ARIN}: North America, Canada, parts of the Caribbean.
+        \item \textbf{RIPE NCC}: Europe, the Middle East, and Central Asia.
+        \item \textbf{APNIC}: Asia and the Pacific region.
+        \item \textbf{LACNIC}: Latin America and parts of the Caribbean.
+        \item \textbf{AFRINIC}: Africa and the Indian Ocean region.
+    \end{itemize}
+    
+    \hfill \cite{rir_overview}
 \end{Def}
 
 
+\begin{Def}[Carrier-Grade NAT (CGNAT/NAT444)]
+
+    \textbf{Carrier-Grade NAT (CGNAT)}, also known as \textbf{NAT444}, is a network translation mechanism used by Internet Service Providers (ISPs) to address IPv4 address exhaustion. It refers to three sets of IPv4 addresses:
+    \begin{itemize}
+        \item \textbf{Customer Private}: IPv4 addresses within the customer's local network.
+        \item \textbf{ISP Private}: IPv4 addresses used internally within the ISP's network.
+        \item \textbf{Public Internet}: IPv4 addresses used for external communication.
+    \end{itemize}
+    
+    Network Address Translation occurs in two stages:
+    \begin{itemize}
+        \item \textbf{Customer Private → ISP Private}: Translation by the customer's router---\textbf{Customer Premises Equipment (CPE)}.
+        \item \textbf{ISP Private → Public Internet}: Translation by the ISP's CGNAT device.
+    \end{itemize}
+
+    \hfill \cite{rfc2663}\cite{rbfs_cgnat}
+    
+\end{Def}
+    
+\newpage
+
+\begin{figure}[h!]
+    \hspace{-2.5em}
+    \includegraphics[width=1.1\textwidth]{Sections/network/cgnat.png}
+    \caption{Carrier-Grade NAT (CGNAT) Translation Process}
+    \label{fig:cgnat}
+\end{figure}
