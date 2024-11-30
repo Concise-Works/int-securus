@@ -121,8 +121,7 @@ This section details how internet traffic is transmitted between devices.
 
     \begin{enumerate}
         \item \textbf{Physical}: Converts data into physical signals (e.g., electrical, optical, or radio waves) for transmission across the network medium (e.g., cables, fiber optics, or wireless channels).
-        \item \textbf{Data Link}: local delivery of directly connected devices within \textbf{Local Area Networks} (LAN) using \textbf{Media Access Control} (MAC) addresses for 
-        addressing.
+        \item \textbf{Data Link}: local delivery of directly connected devices within the same network.
         \item \textbf{Network}: Handles addressing, routing, in external networks from source to destination.
         \item \textbf{Transport}: Ensures end-to-end delivery, via a message delivery protocol.
         \item \textbf{Session}: Initiates and terminates network connections, ensuring efficient resource usage.
@@ -446,6 +445,308 @@ $2^8 = 256$. If a LAN has 129 hosts, that LAN will occupy all 256 addresses.\\
 
 \end{Example}
     
+\newpage 
 
+\begin{Def}[Ports]
+
+    A host may have serve multiple resources, HTTP, FTP, SSH, etc. \textbf{Ports} are used to distinguish between these services.
+    Port numbers are managed by the \textbf{Internet Assigned Numbers Authority (IANA)}, outlined in RFC\#6335. The RFC divides ports into three categories:
+    \begin{itemize}
+        \item \textbf{Well-Known Ports (0–1023)}: Reserved for standardized services (HTTP: port 80).
+        \item \textbf{Registered Ports (1024–49151)}: User applications or services upon request.
+        \item \textbf{Dynamic/Private Ports (49152–65535)}: Temporary communications. \hfill \cite{rfc6335}
+    \end{itemize}
+    \noindent
+    Which can be found here: \href{https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml}{IANA Service Names and Port Numbers}.
+\end{Def}
+
+\vspace{-.25em}
+\begin{Def}[Transport Layer Protocols (TCP, UDP, QUIC)]
+
+    Out of numerous transport layer protocols, there are three primary protocols used to dictate the flow of data between devices:
+    \begin{itemize}
+        \item \textbf{TCP}: A connection-oriented protocol that ensures reliable communication by establishing a connection before transmitting data. TCP guarantees delivery, maintains packet order, and retransmits lost packets. It is ideal for applications like web browsing (HTTP/HTTPS) and file transfers (FTP). \hfill \cite{rfc793}
+        \item \textbf{UDP}: A connectionless protocol that prioritizes speed by sending data without establishing a connection. It does not guarantee delivery, order, or error correction, making it suitable for time-sensitive applications like video streaming, online gaming, and DNS lookups. \hfill \cite{rfc768}
+        \item \textbf{QUIC}: A modern, connection-oriented protocol built on UDP that combines speed with reliability. QUIC provides features like multiplexed streams, faster connection establishment, and built-in encryption, addressing TCP’s latency issues while retaining UDP’s efficiency. It is optimized for HTTP/3 and increasing in use. \hfill \cite{rfc9000}
+    \end{itemize}
+\end{Def}
+
+\begin{Def}[MAC Address]
+
+    A \textbf{MAC address} (Media Access Control address) is a globally unique identifier assigned to a device’s network interface card (NIC) at the \textbf{network interface layer} of the TCP/IP model. 
+    MAC addresses consist of 48 bits, typically represented as six pairs of hexadecimal digits\\
+    (e.g., \texttt{00:1A:2B:3C:4D:5E}).
+
+    The first 24 bits represent the \textbf{Organizationally Unique Identifier (OUI)}, assigned to manufacturers by the \textbf{Institute of Electrical and Electronics Engineers (IEEE)}.
+    The remaining 24 bits are left to the manufacturer to ensure device uniqueness \cite{ieee8022001}.
+\end{Def}
+    
+
+\begin{Def}[Ethernet]
+
+    \textbf{Ethernet} is a protocol used at the \textbf{network interface layer} of the TCP/IP model for communication within local area networks (LANs).
+    If a network is communicating at these layers—such as in homes, offices, or data centers—Ethernet provides the rules for framing, addressing, and transmitting data between devices using \textbf{MAC addresses}. 
+    Ethernet is the dominant standard for wired LAN communication. \hfill \cite{9844436}
+
+\end{Def}
+
+\vspace{-1em}
+\begin{figure}[h]
+    \hspace{1em}
+    \includegraphics[width=0.9\textwidth]{Sections/network/tcpip.png}
+    \caption{Data transmission between devices from application to physical layer and back.}
+    \label{fig:tcpip}
+\end{figure}
+
+\begin{enumerate}
+    \item \textbf{Transport Layer (L3)}: Data is segmented and encapsulated by a protocol like TCP, UDP, or QUIC. Headers with source and destination port numbers are added to enable communication with the correct application.
+    
+    \item \textbf{Network Layer (L2)}: Data is encapsulated into an IP packet, including the source and destination IP addresses. The router uses the destination IP to determine if the packet should be sent locally or to a remote network.
+
+    \item \textbf{Data Link Layer (L1)}: For local delivery, the packet is encapsulated into an Ethernet frame with source and destination MAC addresses. If the packet is leaving the local network, it is sent to the router. Data is wrapped with a \textbf{Ethernet Header and Trailer}.
+
+    \item \textbf{Routing Across Networks}: If the destination is on another network, routing protocols like \textbf{BGP} or \textbf{OSPF} determine the optimal path. The packet is forwarded across multiple routers, each stripping the current Ethernet frame and applying a new one for the next hop.
+\end{enumerate}
+\newpage
+
+\begin{Def}[TCP Header]
+
+    A \textbf{TCP header}, as defined in RFC\#793, is a component of a TCP segment that contains essential information for reliable data delivery between devices. 
+    Minimum size of 20 bytes and a max 60 bytes with options. It's called a header as it sits \textit{ahead} of the \textbf{payload} (data) in the segment. Eg., [TCP Header (20–60 bytes)] + [Payload (0-65,495 bytes)].
+\hfill \cite{rfc793}
+\end{Def}
+
+\begin{table}[h]
+    \centering
+    \resizebox{1\textwidth}{!}{
+    \begin{tabular}{|l|c|p{7cm}|}
+    \hline
+    \textbf{Field}                & \textbf{Size (bits)} & \textbf{Description} \\ \hline
+    Source Port                  & 16                  & Identifies the sending application on the source device. \\ \hline
+    Destination Port             & 16                  & Identifies the receiving application on the destination device. \\ \hline
+    Sequence Number              & 32                  & Specifies the position of the first byte of data in the current segment relative to the start of the data stream. \\ \hline
+    Acknowledgment Number        & 32                  & Used to confirm receipt of data by specifying the next expected byte. \\ \hline
+    Data Offset                  & 4                   & Indicates the size of the TCP header in 32-bit words. \\ \hline
+    Reserved                     & 6                   & Reserved for future use; must be set to 0. \\ \hline
+    Flags (Control Bits)         & 6                   & Includes control flags (e.g., SYN, ACK, FIN) for managing connections and flow. \\ \hline
+    Window Size                  & 16                  & Specifies the size of the sender's receive window for flow control. \\ \hline
+    Checksum                     & 16                  & Ensures the integrity of the TCP header and payload. \\ \hline
+    Urgent Pointer               & 16                  & Points to urgent data within the segment, if the URG flag is set. \\ \hline
+    Options                      & Variable            & Optional fields for additional settings (e.g., Maximum Segment Size). \\ \hline
+    Padding                      & Variable            & Ensures the header is a multiple of 32 bits. \\ \hline
+    \end{tabular}
+    }
+    \caption{Fields of the TCP Header}
+    \label{tab:tcp-header}
+\end{table}
+
+\begin{Def}[Maximum Transmission Unit (MTU)]
+
+    The \textbf{Maximum Transmission Unit (MTU)} is the maximum size of a packet, in bytes,
+    that a network can receive before requiring further fragmentation. Theoretically, a payload 
+    of 65,535 bytes can be sent, but in practice, are much lower (e.g., Ethernet 1,500 bytes). \cite{rfc894}\cite{rfc1191}
+    
+\end{Def}
+    
+\newpage
+
+\vfill
+\begin{figure}[h!]
+    \hspace{-2.5em}
+    \includegraphics[width=1.1\textwidth]{Sections/network/segment.png}
+    \caption{TCP Header}
+    \label{fig:tcp_header}
+\end{figure}
+
+\vfill
+\begin{Def}[Flags (Control Bits) in TCP Header]
+
+    The \textbf{Flags (Control Bits)} in the TCP header are a 6-bit field used to control and manage the state of a TCP connection. Each bit represents a specific flag, and one or more flags can be set simultaneously to define the segment's purpose.
+    
+    \textbf{List of Control Bits}:
+    \begin{itemize}
+        \item \textbf{URG (Urgent Pointer)}: Indicates that the Urgent Pointer field is significant.
+        \item \textbf{ACK (Acknowledgment)}: Confirms receipt of data; the Acknowledgment Number field is valid.
+        \item \textbf{PSH (Push Function)}: Requests the receiver to pass the data to the application immediately.
+        \item \textbf{RST (Reset)}: Resets the connection due to errors or unexpected conditions.
+        \item \textbf{SYN (Synchronize)}: Initiates a connection by synchronizing sequence numbers.
+        \item \textbf{FIN (Finish)}: Signals the sender's intention to terminate the connection.
+    \end{itemize}
+    
+    \hfill \cite{rfc793}
+\end{Def}
+
+\newpage
+\begin{Def}[TCP Options]
+
+    \begin{itemize}
+        \item \textbf{Maximum Segment Size (MSS)}: Specifies the largest segment size the sender is willing to accept (4 bytes).
+        \item \textbf{Window Scale}: Extends the window size field to support larger flow control (3 bytes).
+        \item \textbf{Selective Acknowledgment (SACK)}: Allows acknowledgment of specific data blocks, improving performance in packet loss scenarios (variable size).
+        \item \textbf{Timestamps}: Provides timing information for round-trip time measurement and protection against wrapped sequence numbers (10 bytes).
+        \item \textbf{NOP (No Operation)}: Used for padding to ensure proper alignment (1 byte).
+        \item \textbf{End of Option List (EOL)}: Marks the end of the options field (1 byte). \hfill \cite{rfc793}
+    \end{itemize}
+
+\end{Def}
+
+\begin{Def}[SYN-ACK Handshake]
+
+    The \textbf{SYN-ACK Handshake} is a three-step process used to establish a TCP connection between two devices.
+    After the handshake, data is exchanged bidirectionally via ACKs receipts. Connection termination also follows a three-step process.
+\end{Def}
+
+\vspace{-1em}
+\begin{figure}[h!]
+    \hspace{2em}
+    \includegraphics[width=0.9\textwidth]{Sections/network/synack.png}
+    \caption{SYN-ACK Handshake, showing Sequence (SEQ) and Acknowledgment (ACK) Numbers.}
+    \label{fig:tcp_options}
+\end{figure}
+
+\newpage
+
+\begin{Def}[TCP Windows]
+
+    The \textbf{TCP Window} is a flow control mechanism that determines how much data can be sent before receiving an acknowledgment from the receiver. 
+    The size of the window is specified by the \textbf{Window Size} field in the TCP header and can dynamically adjust during the connection.\\
+
+    \noindent
+    E.g., Consider a window allowance of 10 packets. If the sender is still waiting on an ACK for packet 1 while it has sent out packets 2-10, the window size reduces momentarily
+    waiting for the receiver to acknowledge the first packet before sending more. \hfill \cite{rfc793}
+    
+\end{Def}
+
+\begin{Def}[UDP Header]
+
+    The \textbf{UDP (User Datagram Protocol) Header} is a fixed-size, lightweight header. 
+    It consists of only 8 bytes, containing only essential information. \hfill \cite{rfc768}
+\end{Def}
+
+\begin{table}[h]
+    \centering
+    \resizebox{1\textwidth}{!}{
+    \begin{tabular}{|l|c|p{7cm}|}
+    \hline
+    \textbf{Field}                & \textbf{Size (bits)} & \textbf{Description} \\ \hline
+    Source Port                  & 16                  & Identifies the sending application. This field is optional and may be set to zero if not used. \\ \hline
+    Destination Port             & 16                  & Identifies the receiving application. \\ \hline
+    Length                       & 16                  & Specifies the total length of the UDP packet, including the header and payload, in bytes. \\ \hline
+    Checksum                     & 16                  & Provides basic error-checking for the header and payload. If not used, it can be set to zero. \\ \hline
+    \end{tabular}
+    }
+    \caption{Fields of the UDP Header}
+    \label{tab:udp-header}
+\end{table}    
+
+\begin{figure}[h!]
+    \hspace{-2em}
+    \includegraphics[width=1.1\textwidth]{Sections/network/udp.png}
+    \caption{UDP Header}
+    \label{fig:udp_header}
+\end{figure}
+
+
+\newpage
+
+\begin{Def}[IPv4 Packet Header]
+
+    An \textbf{IPv4 packet header} as outline in RFC\#791, contains essential information for routing and delivering data across networks. 
+    The header consists of several fields, each serving a specific purpose. 
+    The header sits \textit{ahead} of the \textbf{payload} (data) in the packet.\\
+    Eg., [IP Header (20–60 bytes), TCP Header (20–60 bytes), Payload (Variable)]. in a stream of bits. \hfill \cite{rfc791}
+\end{Def}
+\begin{figure}[h!]
+    \centering
+    \resizebox{1\textwidth}{!}{
+        \begin{tabular}{|l|c|p{7cm}|}
+        \hline
+        \textbf{Field} & \textbf{Size (bits)} & \textbf{Description} \\ \hline
+        Version & 4 & Specifies the IP version; for IPv4, this value is 4. \\ \hline
+        Internet Header Length (IHL) & 4 & Indicates the header length in 32-bit words; minimum value is 5 (20 bytes). \\ \hline
+        Type of Service (ToS) & 8 & Defines packet priority and request for specific handling, such as low delay or high throughput. \\ \hline
+        Total Length & 16 & Total size of the packet (header and data) in bytes; minimum is 20 bytes, maximum is 65,535 bytes. \\ \hline
+        Identification & 16 & Unique identifier for fragmenting and reassembling packets. \\ \hline
+        Flags & 3 & Control flags for fragmentation: Reserved (1 bit), Don't Fragment (1 bit), More Fragments (1 bit). \\ \hline
+        Fragment Offset & 13 & Specifies the position of this fragment in the original packet; measured in 8-byte blocks. \\ \hline
+        Time to Live (TTL) & 8 & Limits the packet's lifespan; decremented by each router, and discarded when reaching zero to prevent infinite loops. \\ \hline
+        Protocol & 8 & Indicates the encapsulated protocol (e.g., 6 for TCP, 17 for UDP). \\ \hline
+        Header Checksum & 16 & Error-checking of the header; recalculated at each hop. \\ \hline
+        Source Address & 32 & IP address of the sender. \\ \hline
+        Destination Address & 32 & IP address of the receiver. \\ \hline
+        Options & 0-320 & Optional settings for control, routing, or security; length varies and is not commonly used. \\ \hline
+        Padding & Variable & Added to ensure the header length is a multiple of 32 bits. \\ \hline
+        \end{tabular}
+    }
+    \caption{IPv4 Packet Header Fields}
+    \label{tab:ipv4-header}
+\end{figure}
+
+\newpage 
+
+
+\begin{figure}[h!]
+    \hspace{-2.5em}
+    \includegraphics[width=1.1\textwidth]{Sections/network/datagram.png}
+    \caption{IPv4 Packet Header}
+    \label{fig:ipv4_header}
+\end{figure}
+
+\noindent
+Payload is possibly 8-65,515 bytes, because of UDP's 8-byte header. Normally the size is variable, and much more in 
+the ball park of 1,500 bytes.
+\begin{Def}[IPv4 Flags]
+
+    
+    \textbf{Reserved (Bit 0)}: Reserved for future use, must be set to \texttt{0}.\\
+    \textbf{Don't Fragment (DF, Bit 1)}: \texttt{0}: Fragmenting allowed. 
+    \texttt{1}: Fragmented prohibited; if required, the packet is discarded, and an ICMP error (next definition) is sent to the sender.\\
+    \textbf{More Fragments (MF, Bit 2)}: \texttt{0}: Last fragment. \texttt{1}: More fragments are expected. \hfill \cite{rfc791}
+    
+\end{Def}
+
+\begin{Def}[Internet Control Message Protocol (ICMP)]
+
+    \textbf{Internet Control Message Protocol (ICMP)} is a supporting protocol used by network devices to communicate error messages and operational information.
+    \begin{itemize}
+        \item \textbf{Destination Unreachable}: Indicates that a packet could not reach its destination.
+        \item \textbf{Time Exceeded}: Signals that the packet's \textbf{Time to Live (TTL)} has expired.
+        \item \textbf{Fragmentation Needed}: Informs the sender that the packet is too large for a network segment and cannot be fragmented.
+        \item \textbf{Echo Request and Reply (Ping)}: Used to test connectivity and measure round-trip time between devices. \hfill \cite{rfc792}
+    \end{itemize}
+\end{Def}
+
+    
+\newpage
+\noindent
+The following solution was implemented to address the exhaustion of IPv4 addresses:
+\begin{Def}[Private and Public IP Addresses]
+
+    IP addresses are classified as \textbf{private} or \textbf{public} based on their scope and accessibility:
+    \begin{itemize}
+        \item \textbf{Private IP Addresses}: Reserved for use within private networks (e.g., home or corporate networks). These addresses cannot communicate directly over the internet and include ranges like:
+            \begin{itemize}
+                \item \(10.0.0.0 - 10.255.255.255\)
+                \item \(172.16.0.0 - 172.31.255.255\)
+                \item \(192.168.0.0 - 192.168.255.255\)
+            \end{itemize}
+        \item \textbf{Public IP Addresses}: Globally unique addresses assigned by the Internet Assigned Numbers Authority (IANA) for communication over the internet.
+    \end{itemize}
+
+    \noindent
+    Devices on a private network can communicate internally using private IPs, while a public IP is needed to access external networks like the internet. Communication between these address types is facilitated by \textbf{Network Address Translation (NAT)}.
+    \hfill \cite{rfc1918}
+\end{Def}
+
+\begin{Def}[Network Address Translation (NAT)]
+
+    \textbf{Network Address Translation (NAT)} is a networking technique that translates private IP addresses within a local network to a public IP address for communication over external networks, such as the internet.
+    NAT modifies the source IP address in outbound packets and reverses the process for inbound packets, ensuring data is correctly routed to devices within the private network.
+
+    NAT enables multiple devices to share a single public IP address,
+    facilitating efficient communication while keeping private IP addresses hidden from external networks.  \hfill \cite{rfc1918}\cite{rfc2663}
+
+   
+\end{Def}
 
 

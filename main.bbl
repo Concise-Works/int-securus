@@ -4,6 +4,11 @@
 {DoD standard Internet Protocol}.
 \newblock RFC 760, January 1980.
 
+\bibitem{9844436}
+Ieee standard for ethernet.
+\newblock {\em IEEE Std 802.3-2022 (Revision of IEEE Std 802.3-2018)}, pages
+  1--7025, 2022.
+
 \bibitem{awati_vlsm}
 Rahul Awati.
 \newblock Variable length subnet mask (vlsm).
@@ -76,6 +81,14 @@ Chrystal~R. China and Michael Goodwin.
 \newblock Cloudflare, n.d.
 \newblock Accessed November 2024.
 
+\bibitem{rfc6335}
+M.~Cotton, L.~Eggert, J.~Touch, M.~Westerlund, and S.~Cheshire.
+\newblock Internet assigned numbers authority (iana) procedures for the
+  management of the service name and transport protocol port number registry.
+\newblock Request for Comments 6335, Internet Engineering Task Force, August
+  2011.
+\newblock BCP 165.
+
 \bibitem{deering_ipv6_specification}
 S.~Deering and R.~Hinden.
 \newblock Internet protocol, version 6 (ipv6) specification.
@@ -116,6 +129,13 @@ V.~Fuller, T.~Li, J.~Yu, and K.~Varadhan.
   September 1993.
 \newblock Accessed November 2024.
 
+\bibitem{rfc894}
+Charles~L. Hedrick.
+\newblock A standard for the transmission of ip datagrams over ethernet
+  networks.
+\newblock Request for Comments 894, Internet Engineering Task Force, April
+  1984.
+
 \bibitem{heimlicher_e2e_hbh}
 Simon Heimlicher, Pavan Nuggehalli, and Martin May.
 \newblock End-to-end vs. hop-by-hop transport.
@@ -129,6 +149,18 @@ Simon Heimlicher, Pavan Nuggehalli, and Martin May.
 \newblock Ipv4 and ipv6 address formats.
 \newblock IBM Documentation, January 2022.
 \newblock Last updated 2022-01-18, accessed November 2024.
+
+\bibitem{ieee8022001}
+{IEEE Computer Society}.
+\newblock {\em IEEE Standard for Local and Metropolitan Area Networks: Overview
+  and Architecture}.
+\newblock IEEE, 2001.
+\newblock IEEE Std 802-2001 (Revision of IEEE Std 802-1990).
+
+\bibitem{rfc9000}
+J.~Iyengar and M.~Thomson.
+\newblock Quic: A udp-based multiplexed and secure transport.
+\newblock Request for Comments 9000, Internet Engineering Task Force, May 2021.
 
 \bibitem{javatpoint_rip_protocol}
 {Javatpoint}.
@@ -171,6 +203,12 @@ B.~Manning and P.~Perkins.
   December 1995.
 \newblock Informational.
 
+\bibitem{rfc1191}
+Jeffrey~C. Mogul and Steven~E. Deering.
+\newblock Path mtu discovery.
+\newblock Request for Comments 1191, Internet Engineering Task Force, November
+  1990.
+
 \bibitem{narten_rfc4861}
 T.~Narten, E.~Nordmark, W.~Simpson, and H.~Soliman.
 \newblock Neighbor discovery for ip version 6 (ipv6).
@@ -185,6 +223,18 @@ Steve Petryschuk.
   \url{https://www.auvik.com/franklyit/blog/types-of-networks/?utm_source=chatgpt.com},
   n.d.
 \newblock Accessed November 2024.
+
+\bibitem{rfc768}
+J.~Postel.
+\newblock User datagram protocol.
+\newblock Request for Comments 768, Internet Engineering Task Force, August
+  1980.
+
+\bibitem{rfc792}
+J.~Postel.
+\newblock Internet control message protocol.
+\newblock Request for Comments 792, Internet Engineering Task Force, September
+  1981.
 
 \bibitem{postel_internet_protocol}
 J.~Postel.
@@ -202,6 +252,12 @@ J.~Postel.
   Marina del Rey, CA, USA, September 1981.
 \newblock Obsoleted by RFC 1349, RFC 2474, RFC 6864.
 
+\bibitem{rfc793}
+J.~Postel.
+\newblock Transmission control protocol.
+\newblock Request for Comments 793, Internet Engineering Task Force, September
+  1981.
+
 \bibitem{postel_rfc922}
 J.~Postel.
 \newblock Broadcasting internet datagrams in the presence of subnets.
@@ -213,6 +269,19 @@ J.~Postel.
 Ammar Rayes and Samer Salam.
 \newblock {\em The Internet in IoT}, pages 35--62.
 \newblock Springer International Publishing, Cham, 2022.
+
+\bibitem{rfc1918}
+Y.~Rekhter, B.~Moskowitz, D.~Karrenberg, G.J. de~Groot, and E.~Lear.
+\newblock Address allocation for private internets.
+\newblock Request for Comments 1918, Internet Engineering Task Force, February
+  1996.
+\newblock BCP 5.
+
+\bibitem{rfc2663}
+P.~Srisuresh and M.~Holdrege.
+\newblock Ip network address translator (nat) terminology and considerations.
+\newblock Request for Comments 2663, Internet Engineering Task Force, August
+  1999.
 
 \bibitem{sunshine_rfc919}
 C.~Sunshine and J.~Postel.
