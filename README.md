@@ -12,7 +12,7 @@ Don't
 7. Do not break Theorem boxes between pages. If your text is too large, break it into parts.
 8. Put non-critical information into Tip boxes
 9. Put some-what critical information into Note boxes
-10. No use of personal pronouns.
+10. Reframe the use of personal pronouns.
 
 ## Goal
 Text books should operate as dictionaries of knowledge, not stories or a displays of skill.
