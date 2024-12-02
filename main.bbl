@@ -9,6 +9,12 @@ Ieee standard for ethernet.
 \newblock {\em IEEE Std 802.3-2022 (Revision of IEEE Std 802.3-2018)}, pages
   1--7025, 2022.
 
+\bibitem{iana_root_servers}
+Internet Assigned~Numbers Authority.
+\newblock Root servers.
+\newblock \url{https://www.iana.org/domains/root/servers}.
+\newblock Accessed November 30, 2024.
+
 \bibitem{awati_vlsm}
 Rahul Awati.
 \newblock Variable length subnet mask (vlsm).
@@ -52,6 +58,12 @@ Chrystal~R. China and Michael Goodwin.
 \newblock What is the osi model?
 \newblock IBM Think, June 2024.
 \newblock Published: 11 June 2024.
+
+\bibitem{cloudflare_dns_server_types}
+Cloudflare.
+\newblock Dns server types.
+\newblock \url{https://www.cloudflare.com/learning/dns/dns-server-types/}.
+\newblock Accessed November 30, 2024.
 
 \bibitem{cloudflare_client_server}
 {Cloudflare Learning Center}.
@@ -203,6 +215,12 @@ B.~Manning and P.~Perkins.
   December 1995.
 \newblock Informational.
 
+\bibitem{rfc1034}
+P.~Mockapetris.
+\newblock Domain names - concepts and facilities.
+\newblock Request for Comments 1034, 1987.
+\newblock Obsoletes RFCs 882, 883, 973.
+
 \bibitem{rfc1191}
 Jeffrey~C. Mogul and Steven~E. Deering.
 \newblock Path mtu discovery.
@@ -225,9 +243,7 @@ Number Resource~Organization (NRO).
 \bibitem{petryschuk_types_of_networks}
 Steve Petryschuk.
 \newblock Types of networks: Lan, wan, man, and more.
-\newblock
-  \url{https://www.auvik.com/franklyit/blog/types-of-networks/?utm_source=chatgpt.com},
-  n.d.
+\newblock \url{https://www.auvik.com/franklyit/blog/types-of-networks/}, n.d.
 \newblock Accessed November 2024.
 
 \bibitem{rfc768}

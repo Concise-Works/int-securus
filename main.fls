@@ -386,6 +386,12 @@ INPUT .\Sections\network\nat.png
 INPUT .\Sections\network\cgnat.png
 INPUT .\Sections\network\cgnat.png
 INPUT .\Sections\network\cgnat.png
+INPUT .\Sections\network\dns.png
+INPUT .\Sections\network\dns.png
+INPUT .\Sections\network\dns.png
+INPUT .\Sections\network\httpheader.png
+INPUT .\Sections\network\httpheader.png
+INPUT .\Sections\network\httpheader.png
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl

@@ -749,9 +749,9 @@ the ball park of 1,500 bytes.
     \begin{itemize}
         \item \textbf{Private IP Addresses}: Reserved for use within private networks (e.g., home or corporate networks). These addresses cannot communicate directly over the internet and include ranges like:
             \begin{itemize}
-                \item \(10.0.0.0 - 10.255.255.255\)
-                \item \(172.16.0.0 - 172.31.255.255\)
-                \item \(192.168.0.0 - 192.168.255.255\)
+                \item[>] \(10.0.0.0 - 10.255.255.255\)
+                \item[>] \(172.16.0.0 - 172.31.255.255\)
+                \item[>] \(192.168.0.0 - 192.168.255.255\)
             \end{itemize}
         \item \textbf{Public IP Addresses}: Globally unique addresses assigned by the Internet Assigned Numbers Authority (IANA) for communication over the internet.
     \end{itemize}
@@ -771,7 +771,7 @@ the ball park of 1,500 bytes.
     facilitating efficient communication while keeping private IP addresses hidden from external networks.  \hfill \cite{rfc1918}\cite{rfc2663}   
 \end{Def}
 
-\vspace{-.5em}
+\vspace{-1em}
 \begin{Def}[Dynamic \& Static NATs and PATs]
 
     When a device crosses a router into an external network, the router replaces parts of the packet with a public translation.
@@ -795,9 +795,9 @@ the ball park of 1,500 bytes.
 
 \end{Def}
 
-\begin{figure}[h!]
+\vspace{-1.5em}
 
-    \vspace{-1.25em}
+\begin{figure}[h!]
     \hspace{-1em}
     \includegraphics[width=1\textwidth]{Sections/network/nat.png}
     \caption{Static and Dynamic NATs from an internal network to the internet.}
@@ -862,3 +862,142 @@ cases, an administrator would be an ISP, who distributes public IPs to clients.
     \caption{Carrier-Grade NAT (CGNAT) Translation Process}
     \label{fig:cgnat}
 \end{figure}
+
+\begin{Def}[DNS Servers]
+
+    \textbf{Domain Name System (DNS) Servers} are specialized servers responsible for translating human-readable domain names (e.g., \texttt{example.com}) into machine-readable IP addresses (e.g., \texttt{192.0.2.1}),
+    a process known as a \textbf{DNS Lookup}. Retrieving a website involves:
+    \begin{itemize}
+        \item Querying DNS servers to resolve a domain name into its corresponding IP address.
+        \item Traversing a hierarchical network of DNS servers: starting from \textbf{root servers}, through \textbf{Top-Level Domain (TLD) servers} (e.g., \texttt{.com}), to the \textbf{authoritative DNS server} for the domain.
+    \end{itemize}
+    
+    \noindent
+    \textbf{Control and Operation}:
+    \begin{itemize}
+        \item \textbf{Root DNS Servers} are managed by independent organizations under the coordination of the \textbf{Internet Corporation for Assigned Names and Numbers (ICANN)}.
+        \item \textbf{TLD DNS Servers} manage domains under specific extensions like \texttt{.com}, \texttt{.org}, and country-specific domains like \texttt{.uk}.
+        \item \textbf{Authoritative DNS Servers} are controlled by entities that manage specific domain names, including private companies, governments, or educational institutions.
+    \end{itemize}
+    
+    \noindent
+    \textbf{Caching}: Devices (e.g., computers, routers) and services (e.g., ISPs) may store previously resolved domain names in a \textbf{DNS cache}, reducing the need for repeated lookups and improving connection speed. \hfill \cite{rfc1034}
+    
+    
+\end{Def}
+
+\newpage
+
+\begin{figure}[h!]
+    \hspace{-2.5em}
+    \includegraphics[width=1.1\textwidth]{Sections/network/dns.png}
+    \caption{DNS Lookup Process: (1). Query root server for (\texttt{.com}), (2). Query TLD for (\texttt{example.com}), (3). Query Authority for (\texttt{example.com's IP}).}
+    \label{fig:dns}
+\end{figure}
+
+\begin{Def}[DNS Hierarchy: Root, TLD, and Authoritative Servers]
+
+    \begin{itemize}
+        \item \textbf{Root Servers}:
+        Only provide references to the appropriate \textbf{TLD servers} based on the queried domain extension (e.g., \texttt{.com}, \texttt{.org}).
+        \begin{itemize}
+            \item Operated by organizations like VeriSign, USC, and ICANN.
+            \item Example: The \texttt{A} Root Server is managed by VeriSign.
+            \item View the full list at: \url{https://root-servers.org/}.
+        \end{itemize}
+    
+        \item \textbf{TLD Servers}:
+        Manages \textbf{Top-Level Domains (TLDs)} such as \texttt{.com}, \texttt{.org}, and \texttt{.uk}. They direct queries to the \textbf{authoritative servers} for the requested domain.
+        \begin{itemize}
+            \item Example: VeriSign manages TLD servers for \texttt{.com} and \texttt{.net}.
+            \item Often operated by private companies or regional internet registries.
+        \end{itemize}
+    
+        \item \textbf{Authoritative Servers}:
+        These servers store DNS records for specific domain names, responding with the IP address of the queried domain.
+        \begin{itemize}
+            \item Example: A hosting provider like AWS or Google Cloud might manage the authoritative server for \texttt{example.com}.
+            \item Businesses, ISPs, or hosting services typically operate these servers.
+        \end{itemize}
+    \end{itemize}
+    
+    \hfill \cite{iana_root_servers}\cite{cloudflare_dns_server_types}
+\end{Def}
+
+\newpage
+
+\begin{Def}[HTTP Session]
+
+    When communicating with a web server, a client establishes an \textbf{HTTP session} to exchange data.
+    The client sends an \textbf{HTTP request} to the server, which processes the request and responds with an \textbf{HTTP response}.
+    The HTTP header and Response consists of:
+    \begin{enumerate}
+        \item \textbf{Request Line}: Contains the request method (e.g., GET, POST), URL, and HTTP version.
+        \item \textbf{Request Headers}: Include additional information such as DNS and client software.
+        \item \textbf{Empty Line}: Separates the header from the body.
+        \item \textbf{Request Body}: Contains data sent to the server (e.g., form data). Optional for some requests (e.g., GET).
+    \end{enumerate}
+\end{Def}
+
+\begin{Def}[Uniform Resource Identifier (URI) \& URLs]
+
+    A \textbf{Uniform Resource Identifier (URI)}: a string which identifies resources on the web.\\
+    A \textbf{Uniform Resource Locator (URL)} is a type of URI that specifies the resource's location.
+    A \textbf{Uniform Resource Name (URN)} is another type of URI that identifies a resource by name in a specific namespace.
+    Designed to unique and present even when its resource is not available (e.g., a book isbn, urn:isbn:0451450523).
+\end{Def}
+
+\begin{figure}[h!]
+    \hspace{-2.5em}
+    \includegraphics[width=1.1\textwidth]{Sections/network/httpheader.png}
+    \caption{HTTP Request and Response Structure}
+    \label{fig:http}
+\end{figure}
+
+\newpage
+
+
+\begin{theo}[Establishing a Website Connection]
+
+    \begin{enumerate}
+        \item \textbf{Application Layer (DNS Request)}:
+        The browser initiates a DNS query to resolve the website's domain name (e.g., \texttt{example.com}) into an IP address. The DNS query traverses:
+        \begin{itemize}
+            \item \textbf{Root DNS Server}$\rightarrow$\textbf{TLD Server}$\rightarrow$\textbf{Authoritative DNS Server}.\\
+            (e.g., \texttt{.com}$\rightarrow$\texttt{example.com}$\rightarrow$\texttt{example.com's IP}).
+        \end{itemize}
+        If the IP address is cached locally or by the ISP, the query resolves faster.
+    
+        \item \textbf{Transport Layer (Connection Establishment)}:
+        After the IP address is resolved, the browser establishes a connection to the server. If using \textbf{TCP}, the connection involves a \textbf{three-way handshake}:
+        \begin{itemize}
+            \item The browser sends a \textbf{SYN} packet to the server.
+            \item The server responds with a \textbf{SYN-ACK} packet.
+            \item The browser completes the handshake by sending an \textbf{ACK} packet.
+        \end{itemize}
+        For protocols like \textbf{UDP}, no handshake occurs, and packets are sent directly without connection establishment.
+    
+        \item \textbf{Network Layer (Routing)}:
+        Packets, regardless of protocol (e.g., TCP, UDP, or ICMP), are encapsulated within IP datagrams and routed to the destination. Routers along the path forward the packets based on the destination IP address in the IP header. The routing process is agnostic to the transport protocol and works universally across all IP-based communication.
+    
+        \item \textbf{Data Link Layer (Frame Transmission)}:
+        If connection is within a local network (e.g., LAN), IP packets incur Ethernet frame encapsulation (or equivalent, depending on the network).
+    
+        \item \textbf{Physical Layer (Transmission)}:
+        Frames are transmitted as electrical signals, light pulses, or radio waves, depending on the physical medium used.
+        \textbf{Inter-domain routing protocols}, such as \textbf{OSPF} or \textbf{BGP}, facilitate the transfer of packets through \textbf{AS}es.
+        
+    
+        \item \textbf{Application Layer (HTTP Request)}:
+        Once the connection is established, the browser sends an \textbf{HTTP request} to the server via datagram \textbf{Payload}:
+        \begin{itemize}
+            \item The browser requests the document.
+            \item The server responds with the HTML content, which is sent back over the established connection.
+        \end{itemize}
+    
+        \item \textbf{Response and Rendering}:
+        The server's response is segmented into TCP packets (if applicable) and reassembled by the browser. The browser processes the HTML and renders the webpage for the user.
+    \end{enumerate}
+    
+\end{theo}
+
