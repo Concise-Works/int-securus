@@ -1,9 +1,100 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{rfc760}
+{DoD standard Internet Protocol}.
+\newblock RFC 760, January 1980.
+
+\bibitem{8457469}
+Ieee standard for ethernet.
+\newblock {\em IEEE Std 802.3-2018 (Revision of IEEE Std 802.3-2015)}, pages
+  1--5600, 2018.
+
+\bibitem{9844436}
+Ieee standard for ethernet.
+\newblock {\em IEEE Std 802.3-2022 (Revision of IEEE Std 802.3-2018)}, pages
+  1--7025, 2022.
 
 \bibitem{adetunji_symmetric_asymmetric_encryption}
 Daniel Adetunji.
 \newblock Symmetric and asymmetric key encryption – explained in plain
   english, April 2023.
+\newblock Accessed: 2024-12-14.
+
+\bibitem{iana_root_servers}
+Internet Assigned~Numbers Authority.
+\newblock Root servers.
+\newblock \url{https://www.iana.org/domains/root/servers}.
+\newblock Accessed November 30, 2024.
+
+\bibitem{awati_vlsm}
+Rahul Awati.
+\newblock Variable length subnet mask (vlsm).
+\newblock TechTarget, October 2021.
+\newblock Last updated October 2021, accessed November 2024.
+
+\bibitem{rfc7540}
+M.~Belshe, R.~Peon, and M.~Thomson.
+\newblock {Hypertext Transfer Protocol Version 2 (HTTP/2)}.
+\newblock Request for Comments, May 2015.
+\newblock Category: Standards Track.
+
+\bibitem{rfc1945}
+T.~Berners-Lee, R.~Fielding, and H.~Frystyk.
+\newblock {Hypertext Transfer Protocol -- HTTP/1.0}.
+\newblock Request for Comments, May 1996.
+\newblock Category: Informational.
+
+\bibitem{berners_lee_uri_2005}
+T.~Berners-Lee, R.~Fielding, and L.~Masinter.
+\newblock Uniform resource identifier (uri): Generic syntax.
+\newblock \url{https://www.rfc-editor.org/rfc/rfc3986#section-1.1.3}, January
+  2005.
+\newblock Network Working Group, RFC 3986, Accessed: November 30, 2024.
+
+\bibitem{rfc9114}
+M.~Bishop.
+\newblock {HTTP/3}.
+\newblock Request for Comments, June 2022.
+\newblock Category: Standards Track.
+
+\bibitem{certbros_ospf_explained}
+CertBros.
+\newblock Ospf explained | step by step.
+\newblock YouTube, n.d.
+\newblock Accessed November 2024.
+
+\bibitem{eastcharmer_vlsm_subnetting}
+East Charmer.
+\newblock Easy vlsm subnetting | step by step vlsm.
+\newblock
+  \url{https://www.youtube.com/watch?v=IgthYZ9N1vs&ab_channel=EastCharmer},
+  n.d.
+\newblock Accessed November 2024.
+
+\bibitem{ibm_osi_model}
+Chrystal~R. China and Michael Goodwin.
+\newblock What is the osi model?
+\newblock IBM Think, June 2024.
+\newblock Published: 11 June 2024.
+
+\bibitem{cloudflare_dns_server_types}
+Cloudflare.
+\newblock Dns server types.
+\newblock \url{https://www.cloudflare.com/learning/dns/dns-server-types/}.
+\newblock Accessed November 30, 2024.
+
+\bibitem{cloudflare_dns_tls}
+{Cloudflare}.
+\newblock Dns over tls vs. dns over https | secure dns.
+\newblock \url{https://www.cloudflare.com/learning/dns/dns-over-tls/}, n.d.
+\newblock Accessed: 2024-12-14.
+
+\bibitem{cloudflare_root_signing}
+{Cloudflare}.
+\newblock The dnssec root signing ceremony.
+\newblock
+  \url{https://www.cloudflare.com/learning/dns/dnssec/root-signing-ceremony/},
+  n.d.
 \newblock Accessed: 2024-12-14.
 
 \bibitem{cloudflare_tls}
@@ -14,6 +105,163 @@ Daniel Adetunji.
   n.d.
 \newblock Accessed: 2024-12-14.
 
+\bibitem{cloudflare_http_not_secure}
+{Cloudflare}.
+\newblock Why is http not secure? | http vs. https.
+\newblock
+  \url{https://www.cloudflare.com/learning/ssl/why-is-http-not-secure/}, n.d.
+\newblock Accessed: 2024-12-14.
+
+\bibitem{cloudflare_client_server}
+{Cloudflare Learning Center}.
+\newblock What do client side and server side mean?, n.d.
+\newblock Accessed: 2024-11-27.
+
+\bibitem{cloudflare_subnet}
+{Cloudflare Learning Center}.
+\newblock What is a subnet? | how subnetting works.
+\newblock Cloudflare, n.d.
+\newblock Accessed November 2024.
+
+\bibitem{cloudflare_autonomous_system}
+{Cloudflare Learning Center}.
+\newblock What is an autonomous system? | what are asns?
+\newblock Cloudflare, n.d.
+\newblock Accessed November 2024.
+
+\bibitem{cloudflare_internet_protocol}
+{Cloudflare Learning Center}.
+\newblock What is internet protocol (ip)?, n.d.
+\newblock Accessed: 2024-11-27.
+
+\bibitem{cloudflare_routing}
+{Cloudflare Learning Center}.
+\newblock What is routing? | ip routing.
+\newblock Cloudflare, n.d.
+\newblock Accessed November 2024.
+
+\bibitem{codecademy_hashing}
+{Codecademy}.
+\newblock What is hashing, and how does it work?
+\newblock \url{https://www.codecademy.com/resources/blog/what-is-hashing/},
+  April 2023.
+\newblock Accessed: 2024-12-14.
+
+\bibitem{rfc5280}
+D.~Cooper, S.~Santesson, S.~Farrell, S.~Boeyen, R.~Housley, and W.~Polk.
+\newblock Internet x.509 public key infrastructure certificate and certificate
+  revocation list (crl) profile.
+\newblock Request for Comments (RFC) 5280, May 2008.
+\newblock Obsoletes RFC 3280, RFC 4325, RFC 4630.
+
+\bibitem{rfc6335}
+M.~Cotton, L.~Eggert, J.~Touch, M.~Westerlund, and S.~Cheshire.
+\newblock Internet assigned numbers authority (iana) procedures for the
+  management of the service name and transport protocol port number registry.
+\newblock Request for Comments 6335, Internet Engineering Task Force, August
+  2011.
+\newblock BCP 165.
+
+\bibitem{cisa_digital_signatures}
+{Cybersecurity and Infrastructure Security Agency (CISA)}.
+\newblock Understanding digital signatures.
+\newblock
+  \url{https://www.cisa.gov/news-events/news/understanding-digital-signatures},
+  February 2021.
+\newblock Accessed: 2024-12-14.
+
+\bibitem{deering_ipv6_specification}
+S.~Deering and R.~Hinden.
+\newblock Internet protocol, version 6 (ipv6) specification.
+\newblock Technical Report RFC 8200, Internet Engineering Task Force (IETF),
+  July 2017.
+\newblock Internet Standard 86, obsoletes RFC 2460.
+
+\bibitem{multiplexing_networkencyclopedia}
+{Editorial Team}.
+\newblock Multiplexing.
+\newblock {\em Network Encyclopedia}, October 2023.
+\newblock Last edited October 5, 2023.
+
+\bibitem{rfc2068}
+R.~Fielding, J.~Gettys, J.~Mogul, H.~Frystyk, and T.~Berners-Lee.
+\newblock {Hypertext Transfer Protocol -- HTTP/1.1}.
+\newblock Request for Comments, January 1997.
+\newblock Category: Standards Track.
+
+\bibitem{rfc2616}
+R.~Fielding, J.~Gettys, J.~Mogul, H.~Frystyk, L.~Masinter, P.~Leach, and
+  T.~Berners-Lee.
+\newblock {Hypertext Transfer Protocol -- HTTP/1.1}.
+\newblock Request for Comments, June 1999.
+\newblock Obsoleted by RFCs 7230, 7231, 7232, 7233, 7234, and 7235. Errata
+  exist.
+
+\bibitem{fielding_http_1999}
+R.~Fielding, J.~Gettys, J.~Mogul, H.~Frystyk, L.~Masinter, P.~Leach, and
+  T.~Berners-Lee.
+\newblock Hypertext transfer protocol -- http/1.1.
+\newblock \url{https://www.rfc-editor.org/rfc/rfc2616}, June 1999.
+\newblock Network Working Group, RFC 2616, Accessed: November 30, 2024.
+
+\bibitem{rfc9110}
+Roy~T. Fielding, Mark Nottingham, and Julian Reschke.
+\newblock {HTTP Semantics}.
+\newblock RFC 9110, June 2022.
+
+\bibitem{fuller_cidr_rfc1519}
+V.~Fuller, T.~Li, J.~Yu, and K.~Varadhan.
+\newblock Classless inter-domain routing (cidr): An address assignment and
+  aggregation strategy.
+\newblock Technical Report RFC 1519, Internet Engineering Task Force (IETF),
+  September 1993.
+\newblock Accessed November 2024.
+
+\bibitem{rfc894}
+Charles~L. Hedrick.
+\newblock A standard for the transmission of ip datagrams over ethernet
+  networks.
+\newblock Request for Comments 894, Internet Engineering Task Force, April
+  1984.
+
+\bibitem{heimlicher_e2e_hbh}
+Simon Heimlicher, Pavan Nuggehalli, and Martin May.
+\newblock End-to-end vs. hop-by-hop transport.
+\newblock In {\em Proceedings of the ACM SIGMETRICS}. Computer Engineering and
+  Networks Laboratory, ETH Zurich, Switzerland; Centre for Electronics Design
+  and Technology, Indian Institute of Science, Bangalore, India, 2007.
+\newblock Accessed November 2024.
+
+\bibitem{ibm_ipv4_ipv6_formats}
+{IBM Documentation}.
+\newblock Ipv4 and ipv6 address formats.
+\newblock IBM Documentation, January 2022.
+\newblock Last updated 2022-01-18, accessed November 2024.
+
+\bibitem{ieee8022001}
+{IEEE Computer Society}.
+\newblock {\em IEEE Standard for Local and Metropolitan Area Networks: Overview
+  and Architecture}.
+\newblock IEEE, 2001.
+\newblock IEEE Std 802-2001 (Revision of IEEE Std 802-1990).
+
+\bibitem{rfc9000}
+J.~Iyengar and M.~Thomson.
+\newblock Quic: A udp-based multiplexed and secure transport.
+\newblock Request for Comments 9000, Internet Engineering Task Force, May 2021.
+
+\bibitem{javatpoint_rip_protocol}
+{Javatpoint}.
+\newblock Rip protocol.
+\newblock Javatpoint, n.d.
+\newblock Accessed November 2024.
+
+\bibitem{kanade_osi_model}
+Vijay Kanade.
+\newblock What is the osi model? definition, layers, and importance.
+\newblock Spiceworks, November 2022.
+\newblock Accessed November 2024.
+
 \bibitem{kinsta_tls_ssl}
 {Kinsta}.
 \newblock Tls vs ssl: What’s the difference? which one should you use?
@@ -21,10 +269,190 @@ Daniel Adetunji.
 \newblock Published December 19, 2019. Updated August 14, 2023. Accessed:
   2024-12-14.
 
+\bibitem{kurose_link_state_routing}
+Jim Kurose.
+\newblock Computer networks and the internet: Routing algorithms and link state
+  routing.
+\newblock YouTube, n.d.
+\newblock Video presentation for Computer Networking: A Top-Down Approach (8th
+  edition), J.F. Kurose and K.W. Ross, Pearson, 2020. Taught at University of
+  Massachusetts Amherst.
+
+\bibitem{leonard_osi_model}
+Samson Leonard.
+\newblock Lecture 1: The osi model.
+\newblock SlidePlayer, 2014.
+\newblock Modified over 9 years ago. References: TCP/IP Protocol Suite, 4th
+  Edition (Chapter 2).
+
+\bibitem{info12060246}
+Kwun-Hung Li and Kin-Yeung Wong.
+\newblock Empirical analysis of ipv4 and ipv6 networks through dual-stack
+  sites.
+\newblock {\em Information}, 12(6), 2021.
+
+\bibitem{manning_rfc1878}
+B.~Manning and P.~Perkins.
+\newblock Variable length subnet table for ipv4.
+\newblock Technical Report RFC 1878, Internet Engineering Task Force (IETF),
+  December 1995.
+\newblock Informational.
+
+\bibitem{rfc1034}
+P.~Mockapetris.
+\newblock Domain names - concepts and facilities.
+\newblock Request for Comments 1034, 1987.
+\newblock Obsoletes RFCs 882, 883, 973.
+
+\bibitem{rfc1191}
+Jeffrey~C. Mogul and Steven~E. Deering.
+\newblock Path mtu discovery.
+\newblock Request for Comments 1191, Internet Engineering Task Force, November
+  1990.
+
+\bibitem{narten_rfc4861}
+T.~Narten, E.~Nordmark, W.~Simpson, and H.~Soliman.
+\newblock Neighbor discovery for ip version 6 (ipv6).
+\newblock Technical Report RFC 4861, Internet Engineering Task Force (IETF),
+  September 2007.
+\newblock Standards Track, Obsoletes RFC 2461.
+
+\bibitem{rir_overview}
+Number Resource~Organization (NRO).
+\newblock Regional internet registries (rirs) overview.
+\newblock Website, 2024.
+\newblock Accessed November 28, 2024.
+
+\bibitem{rfc2986}
+M.~Nystrom and B.~Kaliski.
+\newblock Pkcs \#10: Certification request syntax specification version 1.7.
+\newblock Request for Comments (RFC) 2986, November 2000.
+\newblock Obsoletes RFC 2314.
+
+\bibitem{okta_pki}
+{Okta}.
+\newblock What is public key infrastructure (pki) and how does it work?
+\newblock \url{https://www.okta.com/identity-101/public-key-infrastructure/},
+  August 2024.
+\newblock Accessed: 2024-12-14.
+
+\bibitem{petryschuk_types_of_networks}
+Steve Petryschuk.
+\newblock Types of networks: Lan, wan, man, and more.
+\newblock \url{https://www.auvik.com/franklyit/blog/types-of-networks/}, n.d.
+\newblock Accessed November 2024.
+
+\bibitem{rfc768}
+J.~Postel.
+\newblock User datagram protocol.
+\newblock Request for Comments 768, Internet Engineering Task Force, August
+  1980.
+
+\bibitem{rfc792}
+J.~Postel.
+\newblock Internet control message protocol.
+\newblock Request for Comments 792, Internet Engineering Task Force, September
+  1981.
+
+\bibitem{postel_internet_protocol}
+J.~Postel.
+\newblock Internet protocol - darpa internet program protocol specification.
+\newblock Technical Report RFC 791, Internet Engineering Task Force (IETF),
+  September 1981.
+\newblock Internet Standard 5, obsoletes RFC 760, updated by RFCs 1349, 2474,
+  and 6864.
+
+\bibitem{rfc791}
+J.~Postel.
+\newblock Internet protocol: Darpa internet program protocol specification.
+\newblock Technical Report RFC 791, Defense Advanced Research Projects Agency
+  (DARPA), Information Sciences Institute, University of Southern California,
+  Marina del Rey, CA, USA, September 1981.
+\newblock Obsoleted by RFC 1349, RFC 2474, RFC 6864.
+
+\bibitem{rfc793}
+J.~Postel.
+\newblock Transmission control protocol.
+\newblock Request for Comments 793, Internet Engineering Task Force, September
+  1981.
+
+\bibitem{postel_rfc922}
+J.~Postel.
+\newblock Broadcasting internet datagrams in the presence of subnets.
+\newblock Technical Report RFC 922, Internet Engineering Task Force (IETF),
+  October 1984.
+\newblock Standards Track.
+
+\bibitem{Rayes2022}
+Ammar Rayes and Samer Salam.
+\newblock {\em The Internet in IoT}, pages 35--62.
+\newblock Springer International Publishing, Cham, 2022.
+
+\bibitem{rfc1918}
+Y.~Rekhter, B.~Moskowitz, D.~Karrenberg, G.J. de~Groot, and E.~Lear.
+\newblock Address allocation for private internets.
+\newblock Request for Comments 1918, Internet Engineering Task Force, February
+  1996.
+\newblock BCP 5.
+
+\bibitem{rbfs_cgnat}
+RtBrick.
+\newblock Rbfs carrier-grade network address translation overview.
+\newblock Website, 2024.
+\newblock Accessed November 28, 2024.
+
+\bibitem{rfc2663}
+P.~Srisuresh and M.~Holdrege.
+\newblock Ip network address translator (nat) terminology and considerations.
+\newblock Request for Comments 2663, Internet Engineering Task Force, August
+  1999.
+
+\bibitem{sunshine_rfc919}
+C.~Sunshine and J.~Postel.
+\newblock Broadcasting internet datagrams.
+\newblock Technical Report RFC 919, Internet Engineering Task Force (IETF),
+  October 1984.
+\newblock Standards Track.
+
+\bibitem{rfc}
+Martin Thomson and Francesca Palombini.
+\newblock The rfc series and rfc editor.
+\newblock RFC 9280, June 2022.
+
+\bibitem{ou_internet_history}
+{University of Oklahoma}.
+\newblock History of the world wide web, n.d.
+\newblock Accessed: 2024-11-27.
+
 \bibitem{concise_works_modules}
 Concise Works.
 \newblock Sect modules.
 \newblock \url{https://github.com/Concise-Works/sect-modules}, n.d.
 \newblock Accessed November 2024.
+
+\bibitem{w3c_html_href_draft}
+{World Wide Web Consortium (W3C)}.
+\newblock Html working group draft: Href and url standards, n.d.
+\newblock Accessed: 2024-11-27.
+
+\bibitem{w3c_http_history}
+{World Wide Web Consortium (W3C)}.
+\newblock Hypertext transfer protocol (http) as implemented in w3, n.d.
+\newblock Accessed: 2024-11-27.
+
+\bibitem{yasar_tcpip}
+Kinza Yasar, Mary~E. Shacklett, and Amy Novotny.
+\newblock What is tcp/ip?
+\newblock TechTarget, September 2024.
+\newblock Last updated September 2024.
+
+\bibitem{yitzhak_digital_certificates}
+Tal Yitzhak.
+\newblock Understanding digital certificates: Self-signed vs. ca-signed
+  certificates.
+\newblock
+  \url{https://medium.com/@talyitzhak/understanding-digital-certificates-and-self-signed-certificates-b1cdca759bbc},
+  July 2024.
+\newblock Accessed: 2024-12-14.
 
 \end{thebibliography}
