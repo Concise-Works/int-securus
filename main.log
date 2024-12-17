@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.15)  17 DEC 2024 18:38
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.15)  17 DEC 2024 18:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1491,13 +1491,13 @@ Overfull \hbox (30.22308pt too wide) in paragraph at lines 280--282
 File: Sections/sec/enc/aes/trans/ende.png Graphic file (type bmp)
 <Sections/sec/enc/aes/trans/ende.png>
 
-Overfull \hbox (58.00308pt too wide) in paragraph at lines 288--289
-[][] 
+Overfull \hbox (30.22308pt too wide) in paragraph at lines 288--290
+[]  [] 
  []
 
-) (main.bbl
 
-[32]
+
+[32]) (main.bbl
 bibitemlist
 
 Underfull \hbox (badness 2173) in paragraph at lines 4--7
