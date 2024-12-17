@@ -3,7 +3,7 @@ Now to discuss a possible shared key (symmetric key) algorithm that could be use
 
     \label{theo:aes}
     During a worldwide competition in 2001, the National Institute of Standards and Technology (NIST) selected the Rijndael algorithm as the Advanced Encryption Standard (AES).
-    AES is a symmetric key block cipher that encrypts plaintext (PT) in 128-bit blocks. AES works in rounds permuting the PT with parts of the key.
+    AES is a symmetric key block cipher that encrypts plaintext (PT) in 128-bit blocks. AES works in rounds permuting the PT with partial keys generated from the initial key.
     \begin{itemize}
         \item \textbf{Key Expansion}: An initial key is expanded into a key schedule. These keys will be assigned to each round. 
         The rounds needed depend on the initial key size:
@@ -12,9 +12,17 @@ Now to discuss a possible shared key (symmetric key) algorithm that could be use
             \item 192-bit key: 12 rounds, 13 keys.
             \item 256-bit key: 14 rounds, 15 keys.
         \end{enumerate}
-        \item 128-bit PT is sub-divided into $4\times4$ matrix, each cell is a byte.
-        \item 
+        \item \textbf{Input Transformation}: The PT is transformed into a $4\times4$ matrix, called the \textbf{State}. The 
+        state undergoes four main operations per round:
+        \begin{enumerate}
+            \item \textbf{SubBytes}: Each byte is substituted with a value from the S-Box.
+            \item \textbf{ShiftRows}: Each row is shifted left by an offset.
+            \item \textbf{MixColumns}: Each column is mixed with a fixed matrix.
+            \item \textbf{AddRoundKey}: Each byte in the State is XORed with a sub-key. \hfill \cite{satish2024aes} \cite{nist_aes2001} \cite{brainkartAES2018}
+        \end{enumerate}
     \end{itemize}
+
+    
 \end{Def}
 
 \newpage 
@@ -225,3 +233,61 @@ All together:\\
 \vspace{1em}
 \noindent
 This is AES Key Expansion.
+
+\newpage 
+
+\noindent
+Now to discuss the AES encryption process.\\
+\vspace{1em}
+\hspace{-3em}
+\includegraphics[width=1.1\textwidth]{Sections/sec/enc/aes/trans/high.png}
+
+\vspace{2em}
+\noindent
+First the PT is transformed into a $4\times4$ matrix, called the \textbf{State}. The initial transformation is the \textbf{AddRoundKey} operation,
+which XORs each column of the state with sub-key\\
+$s_0=\{w_0,w_1,w_2,w_3\}$. I.e., $[p_0, p_1, p_2, p_3] \oplus [w_0]$ and so on. Recall $w_0=[b_0,b_1,b_2,b_3]$ 
+for some byte $b_i$ of the initial key.
+\newpage 
+
+\noindent
+To elaborate on the AddRoundKey operation:\\
+
+\hspace{-3em}
+\includegraphics[width=1.1\textwidth]{Sections/sec/enc/aes/trans/add.png}
+AddRoundKey takes a sub-key $s_i$ and XORs each Word $w_i$ with the corresponding column $c_i$ of the State.
+\vspace{5em}
+
+\hspace{-3em}
+\includegraphics[width=1.1\textwidth]{Sections/sec/enc/aes/trans/sub.png}
+
+\noindent
+Just like in Key Expansion's (\ref{theo:key_expansion}) use of the S-Box on the last word of each sub-key. The PT undergoes 
+a full substitution with the S-Box.
+
+\newpage 
+
+\hspace{-3em}
+\includegraphics[width=1.1\textwidth]{Sections/sec/enc/aes/trans/shift.png}
+\vspace{-1em}
+
+
+\noindent
+\underline{Below, the notation $\{01\}$ refers to a hex value.}\\
+
+\vspace{-1em}
+\hspace{-3em}
+\includegraphics[width=1.1\textwidth]{Sections/sec/enc/aes/trans/mix.png}
+
+\newpage
+
+\noindent
+This is the AES Encryption \& Decryption.
+
+\includegraphics[width=1.1\textwidth]{Sections/sec/enc/aes/trans/ende.png}
+
+\vspace{1em}
+\noindent
+For Decryption, the last scheduled key for Encryption is used as the initial transformation. Note the inverse 
+operations of Decryption follow a different order than Encryption, and use 
+their respective inverse functions. This covers the basics of AES.

@@ -1,5 +1,26 @@
 \begin{thebibliography}{1}
 
+\bibitem{brainkartAES2018}
+Aes (advanced encryption standard) structure, 2018--2023.
+\newblock Copyright {\textcopyright} 2018--2023 BrainKart.com; Developed by
+  Therithal info, Chennai. Accessed: 2024-06-15.
+
+\bibitem{satish2024aes}
+Satish CJ.
+\newblock Aes iii - advanced encryption standard - introduction, key expansion
+  in aes cyber security cse4003, 2024.
+\newblock Accessed: 2024-06-15.
+
+\bibitem{nist_aes2001}
+{National Institute of Standards and Technology (NIST)}, Morris~J. Dworkin,
+  Elaine Barker, James~R. Nechvatal, James Foti, Lawrence~E. Bassham,
+  E.~Roback, and James F.~Dray Jr.
+\newblock Advanced encryption standard (aes).
+\newblock Federal Information Processing Standards Publication 197, National
+  Institute of Standards and Technology, November 2001.
+\newblock Accessed: 2024-06-15. Local download available at
+  \url{https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=901427}.
+
 \bibitem{concise_works_modules}
 Concise Works.
 \newblock Sect modules.
