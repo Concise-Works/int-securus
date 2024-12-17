@@ -1,3 +1,5 @@
 \contentsline {chapter}{Contents}{1}{section*.1}%
 \contentsline {chapter}{\chapternumberline {1}Software Security \& Defenses}{4}{chapter.1}%
-\contentsline {chapter}{Bibliography}{16}{chapter*.3}%
+\contentsline {section}{\numberline {1.1}Document Certificates \& Binding Encryptions}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Encryption Algorithms \& Security Definitions}{10}{section.1.2}%
+\contentsline {chapter}{Bibliography}{33}{chapter*.22}%
