@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.15)  15 DEC 2024 01:00
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.15)  17 DEC 2024 13:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1049,13 +1049,34 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@inbox=\box86
 \enit@count@id=\count419
 \enitdp@description=\count420
-)
-LaTeX Info: Redefining \pmod on input line 114.
-) (main.aux
+) (C:\Users\tuber\AppData\Local\Programs\MiKTeX\tex/latex/xlop\xlop.sty
+Package: xlop 2020/04/26 package wrapper for xlop.tex
+ (C:\Users\tuber\AppData\Local\Programs\MiKTeX\tex/generic/xlop\xlop.tex
+\op@count@z=\count421
+\op@count@i=\count422
+\op@count@ii=\count423
+\op@count@iii=\count424
+\op@count@iv=\count425
+\op@count@v=\count426
+\op@count@vi=\count427
+\op@nbop=\count428
+\op@currentstyle=\toks47
 
-LaTeX Warning: Label `fig:http' multiply defined.
-
-)
+`xlop' v0.28  <2020/11/11> (jcc)
+\opcolumnwidth=\dimen347
+\oplineheight=\dimen348
+\op@strutbox=\box87
+\op@decimalsepwidth=\dimen349
+\op@decimalsepoffset=\dimen350
+\op@hrulewidth=\dimen351
+\op@vrulewidth=\dimen352
+\op@parenthesis=\count429
+\op@token=\count430
+\op@stack=\count431
+\op@stackb=\count432
+))
+LaTeX Info: Redefining \pmod on input line 115.
+) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -1139,524 +1160,101 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [2]
 
-[3] (Sections/network/net.tex
-Package mdframed Info: mdframed works in twoside mode on input line 8.
-Package mdframed Info: mdframed works in twoside mode on input line 14.
-Package mdframed Info: mdframed works in twoside mode on input line 19.
-Package mdframed Info: mdframed works in twoside mode on input line 25.
-Package mdframed Info: mdframed works in twoside mode on input line 31.
+[3] (Sections/sec/enc/aes/aes.tex
+Package mdframed Info: mdframed works in twoside mode on input line 3.
 
 
 [4]
-Package mdframed Info: mdframed works in twoside mode on input line 39.
-Package mdframed Info: Not enough space on this page on input line 41.
-Package mdframed Info: mdframed works in twoside mode on input line 44.
-Package mdframed Info: mdframed works in twoside mode on input line 54.
-Package mdframed Info: mdframed works in twoside mode on input line 60.
-Package mdframed Info: mdframed works in twoside mode on input line 70.
+Package mdframed Info: mdframed works in twoside mode on input line 23.
+Package mdframed Info: Not enough space on this page on input line 35.
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--39
+
+ []
+
+File: Sections/sec/enc/aes/input.png Graphic file (type bmp)
+<Sections/sec/enc/aes/input.png>
+
+Overfull \hbox (30.22308pt too wide) in paragraph at lines 42--44
+[]  [] 
+ []
+
 
 
 [5]
-Package mdframed Info: mdframed works in twoside mode on input line 95.
-Package mdframed Info: mdframed works in twoside mode on input line 106.
-Package mdframed Info: mdframed works in twoside mode on input line 112.
+File: Sections/sec/enc/aes/subkey.png Graphic file (type bmp)
+<Sections/sec/enc/aes/subkey.png>
+
+Overfull \hbox (30.22308pt too wide) in paragraph at lines 52--54
+[]  [] 
+ []
+
+File: Sections/sec/enc/aes/round_gen.png Graphic file (type bmp)
+<Sections/sec/enc/aes/round_gen.png>
+
+Overfull \hbox (30.22308pt too wide) in paragraph at lines 60--62
+[]  [] 
+ []
+
+File: Sections/sec/enc/aes/g_func.png Graphic file (type bmp)
+<Sections/sec/enc/aes/g_func.png>
+
+Overfull \hbox (30.22308pt too wide) in paragraph at lines 67--69
+[]  [] 
+ []
+
 
 
 [6]
-Package mdframed Info: mdframed works in twoside mode on input line 121.
-Package mdframed Info: Not enough space on this page on input line 132.
-Package mdframed Info: mdframed works in twoside mode on input line 134.
-Package mdframed Info: mdframed works in twoside mode on input line 143.
+Package mdframed Info: mdframed works in twoside mode on input line 73.
+Package mdframed Info: mdframed works in twoside mode on input line 81.
+Package mdframed Info: mdframed works in twoside mode on input line 97.
 
 
 [7]
-File: Sections/network/osi_tcp.png Graphic file (type bmp)
-<Sections/network/osi_tcp.png>
-Package mdframed Info: mdframed works in twoside mode on input line 177.
-Package mdframed Info: mdframed works in twoside mode on input line 188.
+Package mdframed Info: mdframed works in twoside mode on input line 109.
+Package mdframed Info: Not enough space on this page on input line 119.
+Package mdframed Info: mdframed works in twoside mode on input line 122.
+Package mdframed Info: mdframed works in twoside mode on input line 128.
 
 
 [8]
-Package mdframed Info: mdframed works in twoside mode on input line 202.
-Package mdframed Info: Not enough space on this page on input line 204.
-Package mdframed Info: mdframed works in twoside mode on input line 206.
-Package mdframed Info: mdframed works in twoside mode on input line 225.
+File: Sections/sec/enc/aes/round_gen.png Graphic file (type bmp)
+<Sections/sec/enc/aes/round_gen.png>
+File: Sections/sec/enc/aes/g_func.png Graphic file (type bmp)
+<Sections/sec/enc/aes/g_func.png>
+File: Sections/sec/enc/aes/sub_word.png Graphic file (type bmp)
+<Sections/sec/enc/aes/sub_word.png>
+
+Overfull \hbox (30.22308pt too wide) in paragraph at lines 173--175
+[]  [] 
+ []
+
 
 
 [9]
-Package mdframed Info: mdframed works in twoside mode on input line 241.
-Package mdframed Info: Not enough space on this page on input line 245.
-Package mdframed Info: mdframed works in twoside mode on input line 247.
-Package mdframed Info: mdframed works in twoside mode on input line 251.
-
-Overfull \hbox (23.32455pt too wide) in paragraph at lines 261--261
-[]|\TU/lmr/bx/n/10 Class| 
- []
-
-
-Overfull \hbox (2.8618pt too wide) in paragraph at lines 261--261
-[]|\TU/lmr/bx/n/10 Binary
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--261
-[]|\TU/lmr/bx/n/10 Range
- []
-
-
-Overfull \hbox (4.65456pt too wide) in paragraph at lines 262--262
-[]|\TU/lmr/m/n/10 A| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
-[]|\TU/lmr/m/n/10 1.0.0.0 to
- []
-
-
-Overfull \hbox (4.23456pt too wide) in paragraph at lines 263--263
-[]|\TU/lmr/m/n/10 B| 
- []
-
-
-Underfull \hbox (badness 5519) in paragraph at lines 263--263
-[]|\TU/lmr/m/n/10 128.0.0.0 to
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
-[]|\TU/lmr/m/n/10 Unicast (medium
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
-[]|\TU/lmr/m/n/10 For medium-sized net-
- []
-
-
-Underfull \hbox (badness 2073) in paragraph at lines 263--264
-\TU/lmr/m/n/10 works; 16 bits for the
- []
-
-
-Overfull \hbox (4.37456pt too wide) in paragraph at lines 264--264
-[]|\TU/lmr/m/n/10 C| 
- []
-
-
-Underfull \hbox (badness 5519) in paragraph at lines 264--264
-[]|\TU/lmr/m/n/10 192.0.0.0 to
- []
-
-
-Overfull \hbox (1.4345pt too wide) in paragraph at lines 264--264
-\TU/lmr/m/n/10 223.255.255.0| 
- []
-
-
-Underfull \hbox (badness 1668) in paragraph at lines 264--265
-[]|\TU/lmr/m/n/10 For small networks; 24
- []
-
-
-Overfull \hbox (4.79456pt too wide) in paragraph at lines 265--265
-[]|\TU/lmr/m/n/10 D| 
- []
-
-
-Underfull \hbox (badness 5519) in paragraph at lines 265--265
-[]|\TU/lmr/m/n/10 224.0.0.0 to
- []
-
-
-Overfull \hbox (11.4345pt too wide) in paragraph at lines 265--265
-\TU/lmr/m/n/10 239.255.255.255| 
- []
-
-
-Overfull \hbox (3.96455pt too wide) in paragraph at lines 266--266
-[]|\TU/lmr/m/n/10 E| 
- []
-
-
-Underfull \hbox (badness 5519) in paragraph at lines 266--266
-[]|\TU/lmr/m/n/10 240.0.0.0 to
- []
-
-
-Overfull \hbox (11.4345pt too wide) in paragraph at lines 266--266
-\TU/lmr/m/n/10 255.255.255.255| 
- []
-
-
-Underfull \hbox (badness 7796) in paragraph at lines 266--266
-[]|\TU/lmr/m/n/10 Experimental and
- []
-
-
-Overfull \hbox (4.2138pt too wide) in paragraph at lines 259--268
- [][] 
- []
-
+Package mdframed Info: mdframed works in twoside mode on input line 179.
+Package mdframed Info: Not enough space on this page on input line 185.
+File: Sections/sec/enc/aes/rcon.png Graphic file (type bmp)
+<Sections/sec/enc/aes/rcon.png>
 
 
 [10]
-Package mdframed Info: mdframed works in twoside mode on input line 282.
-Package mdframed Info: Not enough space on this page on input line 286.
-Package mdframed Info: mdframed works in twoside mode on input line 288.
-Package mdframed Info: mdframed works in twoside mode on input line 296.
-
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+Underfull \hbox (badness 10000) in paragraph at lines 216--218
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 308--310
-
- []
-
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 314.
-Package mdframed Info: mdframed works in twoside mode on input line 321.
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 326.
-
+File: Sections/sec/enc/aes/recap1.png Graphic file (type bmp)
+<Sections/sec/enc/aes/recap1.png>
+File: Sections/sec/enc/aes/recap2.png Graphic file (type bmp)
+<Sections/sec/enc/aes/recap2.png>
+) (main.bbl
 
 [11]
-Package mdframed Info: mdframed works in twoside mode on input line 334.
-Package mdframed Info: Not enough space on this page on input line 359.
-
-Overfull \hbox (2.95428pt too wide) in paragraph at lines 360--362
-\TU/lmr/m/n/10 Consider the IP address \TU/lmtt/m/n/10 192.168.2.12/26 \TU/lmr/m/n/10 and its binary \TU/lmtt/m/n/10 11000000.10101000.00000010.00001100\TU/lmr/m/n/10 : 
- []
-
-File: Sections/network/ip_address.png Graphic file (type bmp)
-<Sections/network/ip_address.png>
-
+bibitemlist
+)
 
 [12]
-Package mdframed Info: mdframed works in twoside mode on input line 372.
-
-Underfull \hbox (badness 10000) in paragraph at lines 373--374
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 375--377
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 378--380
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 381--383
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 384--386
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 387--389
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 390--392
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 393--395
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 396--398
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 399--401
-
- []
-
-
-
-[13]
-Package mdframed Info: mdframed works in twoside mode on input line 410.
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--427
-
- []
-
-File: Sections/network/subnetting.png Graphic file (type bmp)
-<Sections/network/subnetting.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 428--430
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 431--436
-
- []
-
-Package mdframed Info: Not enough space on this page on input line 446.
-
-
-[14]
-Package mdframed Info: mdframed works in twoside mode on input line 451.
-Package mdframed Info: Not enough space on this page on input line 461.
-Package mdframed Info: mdframed works in twoside mode on input line 465.
-Package mdframed Info: mdframed works in twoside mode on input line 475.
-Package mdframed Info: mdframed works in twoside mode on input line 486.
-
-
-[15]
-Package mdframed Info: Not enough space on this page on input line 491.
-File: Sections/network/tcpip.png Graphic file (type bmp)
-<Sections/network/tcpip.png>
-
-
-[16]
-Package mdframed Info: mdframed works in twoside mode on input line 513.
-Package mdframed Info: Not enough space on this page on input line 517.
-
-Underfull \hbox (badness 2237) in paragraph at lines 538--538
-[]|\TU/lmr/m/n/10 Identifies the sending application on the
- []
-
-Package mdframed Info: mdframed works in twoside mode on input line 544.
-
-
-[17]
-File: Sections/network/segment.png Graphic file (type bmp)
-<Sections/network/segment.png>
-
-Overfull \hbox (20.22308pt too wide) in paragraph at lines 555--557
-[]  [] 
- []
-
-Package mdframed Info: mdframed works in twoside mode on input line 563.
-
-
-[18]
-Package mdframed Info: mdframed works in twoside mode on input line 581.
-Package mdframed Info: Not enough space on this page on input line 591.
-Package mdframed Info: mdframed works in twoside mode on input line 595.
-File: Sections/network/synack.png Graphic file (type bmp)
-<Sections/network/synack.png>
-
-
-[19]
-Package mdframed Info: mdframed works in twoside mode on input line 611.
-
-Underfull \hbox (badness 10000) in paragraph at lines 612--614
-
- []
-
-Package mdframed Info: Not enough space on this page on input line 619.
-Package mdframed Info: mdframed works in twoside mode on input line 622.
-File: Sections/network/udp.png Graphic file (type bmp)
-<Sections/network/udp.png>
-
-Overfull \hbox (25.22308pt too wide) in paragraph at lines 644--646
-[]  [] 
- []
-
-
-
-[20]
-Package mdframed Info: mdframed works in twoside mode on input line 652.
-Package mdframed Info: Not enough space on this page on input line 656.
-
-
-[21]
-File: Sections/network/datagram.png Graphic file (type bmp)
-<Sections/network/datagram.png>
-
-Overfull \hbox (20.22308pt too wide) in paragraph at lines 687--689
-[]  [] 
- []
-
-Package mdframed Info: mdframed works in twoside mode on input line 697.
-Package mdframed Info: mdframed works in twoside mode on input line 708.
-
-
-[22]
-Package mdframed Info: mdframed works in twoside mode on input line 724.
-Package mdframed Info: Not enough space on this page on input line 743.
-Package mdframed Info: mdframed works in twoside mode on input line 748.
-Package mdframed Info: mdframed works in twoside mode on input line 767.
-
-
-[23]
-Package mdframed Info: Not enough space on this page on input line 773.
-Package mdframed Info: mdframed works in twoside mode on input line 777.
-File: Sections/network/nat.png Graphic file (type bmp)
-<Sections/network/nat.png>
-
-
-[24]
-Package mdframed Info: mdframed works in twoside mode on input line 815.
-Package mdframed Info: Not enough space on this page on input line 836.
-Package mdframed Info: mdframed works in twoside mode on input line 840.
-
-Overfull \hbox (3.30252pt too wide) in paragraph at lines 850--851
-[]\TU/lmr/bx/n/10 Customer Private → ISP Private\TU/lmr/m/n/10 : Translation by the customer’s router—\TU/lmr/bx/n/10 Customer
- []
-
-
-
-[25]
-File: Sections/network/cgnat.png Graphic file (type bmp)
-<Sections/network/cgnat.png>
-
-Overfull \hbox (20.22308pt too wide) in paragraph at lines 861--863
-[]  [] 
- []
-
-Package mdframed Info: mdframed works in twoside mode on input line 868.
-
-
-[26]
-File: Sections/network/dns.png Graphic file (type bmp)
-<Sections/network/dns.png>
-
-Overfull \hbox (20.22308pt too wide) in paragraph at lines 893--895
-[]  [] 
- []
-
-Package mdframed Info: mdframed works in twoside mode on input line 900.
-
-
-[27]
-Package mdframed Info: mdframed works in twoside mode on input line 931.
-Package mdframed Info: Not enough space on this page on input line 944.
-Package mdframed Info: mdframed works in twoside mode on input line 947.
-File: Sections/network/httpheader.png Graphic file (type bmp)
-<Sections/network/httpheader.png>
-
-
-[28]
-Package mdframed Info: mdframed works in twoside mode on input line 964.
-Package mdframed Info: Not enough space on this page on input line 967.
-
-
-[29]
-Package mdframed Info: mdframed works in twoside mode on input line 994.
-
-Overfull \hbox (3.38116pt too wide) in paragraph at lines 1024--1027
-[]\TU/lmr/bx/n/10 Application Layer (HTTP Request)\TU/lmr/m/n/10 : Once the connection is established, the browser
- []
-
-Package mdframed Info: Not enough space on this page on input line 1035.
-
-
-[30]
-File: Sections/network/packet.png Graphic file (type bmp)
-<Sections/network/packet.png>
-
-Overfull \hbox (20.22308pt too wide) in paragraph at lines 1040--1042
-[]  [] 
- []
-
-)
-
-[31] (Sections/sec/tls.tex
-Package mdframed Info: mdframed works in twoside mode on input line 9.
-Package mdframed Info: mdframed works in twoside mode on input line 14.
-Package mdframed Info: mdframed works in twoside mode on input line 24.
-Package mdframed Info: mdframed works in twoside mode on input line 33.
-
-
-[32]
-Package mdframed Info: mdframed works in twoside mode on input line 44.
-Package mdframed Info: Not enough space on this page on input line 48.
-Package mdframed Info: mdframed works in twoside mode on input line 50.
-File: Sections/sec/encrypt.png Graphic file (type bmp)
-<Sections/sec/encrypt.png>
-Package mdframed Info: mdframed works in twoside mode on input line 71.
-Package mdframed Info: mdframed works in twoside mode on input line 79.
-
-
-[33]
-Package mdframed Info: mdframed works in twoside mode on input line 86.
-Package mdframed Info: Not enough space on this page on input line 97.
-File: Sections/sec/cert.png Graphic file (type bmp)
-<Sections/sec/cert.png>
-
-
-[34]
-Package mdframed Info: mdframed works in twoside mode on input line 109.
-Package mdframed Info: Not enough space on this page on input line 113.
-Package mdframed Info: mdframed works in twoside mode on input line 116.
-Package mdframed Info: mdframed works in twoside mode on input line 127.
-Package mdframed Info: mdframed works in twoside mode on input line 138.
-File: Sections/sec/csr.png Graphic file (type bmp)
-<Sections/sec/csr.png>
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package mdframed Info: mdframed works in twoside mode on input line 158.
-
-
-[35]
-Package mdframed Info: Not enough space on this page on input line 162.
-Package mdframed Info: mdframed works in twoside mode on input line 165.
-
-
-[36]
-File: Sections/sec/chain.png Graphic file (type bmp)
-<Sections/sec/chain.png>
-Package mdframed Info: mdframed works in twoside mode on input line 186.
-
-
-[37]
-Package mdframed Info: mdframed works in twoside mode on input line 202.
-Package mdframed Info: Not enough space on this page on input line 213.
-) (Sections/enc/enc.tex) (main.bbl
-
-[38]
-bibitemlist
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--85
-[]\TU/lmr/m/n/10 Cloudflare.  Dns server types.  [][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][] []
- []
-
-
-
-[39]
-
-[40]
-
-[41]
-
-[42]
-Underfull \hbox (badness 10000) in paragraph at lines 450--457
-[]\TU/lmr/m/n/10 Tal Yitzhak.  Understanding digital certificates: Self-signed
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 450--457
-\TU/lmr/m/n/10 vs. ca-signed certificates.  [][]$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][][][][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 450--457
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[][]\TU/lmr/m/n/10 ,
- []
-
-)
-
-[43]
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
@@ -1665,20 +1263,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 450--457
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 338F20AC28712C478A5718DBF8B3600A;1136.
+(rerunfilecheck)             Checksum: DE7513C5F53254D92AFCFBC4983CD427;383.
  ) 
 Here is how much of TeX's memory you used:
- 30128 strings out of 409029
- 542150 string characters out of 5756741
- 1943612 words of memory out of 5000000
- 52344 multiletter control sequences out of 15000+600000
- 564920 words of font info for 81 fonts, out of 8000000 for 9000
+ 30304 strings out of 409029
+ 539894 string characters out of 5756741
+ 1965612 words of memory out of 5000000
+ 52537 multiletter control sequences out of 15000+600000
+ 564896 words of font info for 78 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,13n,110p,584b,956s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (43 pages, 887216 bytes).
+Output written on main.xdv (12 pages, 98504 bytes).

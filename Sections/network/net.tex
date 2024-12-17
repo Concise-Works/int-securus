@@ -294,19 +294,15 @@ When IP addresses began
 
 \begin{Def}[Classless Inter-Domain Routing (CIDR)]
 
-    \textbf{Classless Inter-Domain Routing} (CIDR), introduced in 1993 through RFC\#1518 and RFC\#1519 to address IPv4 exhaustion.
-    \textbf{CIDR replaced classful subnetting} with VLSM.
+    \textbf{CIDR}, introduced in 1993 through RFC\#1518 and RFC\#1519 to address IPv4 exhaustion.
+    \textbf{CIDR replaced classful subnetting} with VLSM \cite{fuller_cidr_rfc1519}.
 
     \noindent
-    CIDR notation is written as \underline{\texttt{IP Address/Prefix Length} (e.g., \texttt{192.168.1.0/24})}, where:
+    CIDR denoted as \underline{\texttt{IP Address/Prefix Length} (e.g., \texttt{192.168.1.0/24})}, where:
     \begin{itemize}
         \item \texttt{IP Address}: Represents the starting address of the network.
-        \item \texttt{Prefix Length}: The number of bits used for the \textbf{network portion} of the address.\\
+        \item \texttt{Prefix Length}: The number of bits used for the \textbf{network portion} of the address. E.g.,
     \end{itemize}
-
-    \vspace{-1em}
-    \noindent
-    For example:\\
 
         \vspace{-1em}
         \begin{center}
@@ -314,7 +310,6 @@ When IP addresses began
             \texttt{255.0.0.0\textbf{/8}}; \hspace{.2em} \texttt{255.255.0.0\textbf{/16}}; \hspace{.2em} \texttt{255.255.255.0\textbf{/24}}; \hspace{.2em} \texttt{255.255.255.192\textbf{/26}};
             \normalsize
         \end{center}
-    \hfill \cite{fuller_cidr_rfc1519}
 \end{Def}
 
 \begin{Def}[Route Aggregation]
@@ -329,6 +324,11 @@ When IP addresses began
     However, these networks share a common prefix: the first 22 bits (\texttt{192.168.0.0/22}), which aggregates to: \texttt{\textbf{192.168.0.0/22}} \cite{fuller_cidr_rfc1519}.
 
 \end{Def}
+\begin{theo}[Routers - Path of Least Resistance]
+
+    If the target address of a router is \texttt{192.168.1.5}
+    and the router has routes, \texttt{192.168.0.0/16} vs. \texttt{192.168.1.0/24}, the prefix length 24 will be chosen.
+\end{theo}
 \newpage
 \begin{Def}[IP Address Components]
     
