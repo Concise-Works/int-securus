@@ -395,6 +395,9 @@ INPUT .\Sections\network\dns.png
 INPUT .\Sections\network\httpheader.png
 INPUT .\Sections\network\httpheader.png
 INPUT .\Sections\network\httpheader.png
+INPUT .\Sections\network\ethframe.png
+INPUT .\Sections\network\ethframe.png
+INPUT .\Sections\network\ethframe.png
 INPUT .\Sections\network\packet.png
 INPUT .\Sections\network\packet.png
 INPUT .\Sections\network\packet.png
