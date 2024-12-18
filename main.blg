@@ -17,45 +17,45 @@ Warning--to sort, need author or key in 8457469
 Warning--to sort, need author or key in brainkartAES2018
 Warning--empty author in 8457469
 Warning--empty author in 9844436
-You've used 85 entries,
+You've used 84 entries,
             2118 wiz_defined-function locations,
-            898 strings with 15845 characters,
-and the built_in function-call counts, 20850 in all, are:
-= -- 2020
-> -- 939
+            894 strings with 15748 characters,
+and the built_in function-call counts, 20633 in all, are:
+= -- 1998
+> -- 932
 < -- 13
-+ -- 391
-- -- 298
-* -- 985
-:= -- 3560
-add.period$ -- 309
-call.type$ -- 85
-change.case$ -- 402
++ -- 388
+- -- 296
+* -- 979
+:= -- 3523
+add.period$ -- 305
+call.type$ -- 84
+change.case$ -- 398
 chr.to.int$ -- 0
-cite$ -- 91
-duplicate$ -- 668
-empty$ -- 1836
-format.name$ -- 298
-if$ -- 4448
+cite$ -- 90
+duplicate$ -- 661
+empty$ -- 1814
+format.name$ -- 296
+if$ -- 4400
 int.to.chr$ -- 0
-int.to.str$ -- 85
+int.to.str$ -- 84
 missing$ -- 10
-newline$ -- 481
-num.names$ -- 162
-pop$ -- 679
+newline$ -- 475
+num.names$ -- 160
+pop$ -- 671
 preamble$ -- 1
-purify$ -- 319
+purify$ -- 316
 quote$ -- 0
-skip$ -- 556
+skip$ -- 550
 stack$ -- 0
-substring$ -- 526
-swap$ -- 103
+substring$ -- 521
+swap$ -- 102
 text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 336
+type$ -- 332
 warning$ -- 6
-while$ -- 170
-width$ -- 87
-write$ -- 973
+while$ -- 168
+width$ -- 86
+write$ -- 961
 (There were 9 warnings)
