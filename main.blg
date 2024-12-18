@@ -5,44 +5,57 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 5 items.
 Database file #1: refs.bib
-You've used 5 entries,
+Warning--entry type for "joyofcryptography" isn't style-file defined
+--line 1529 of file refs.bib
+Warning--entry type for "satish2024aes" isn't style-file defined
+--line 1661 of file refs.bib
+Warning--entry type for "brainkartAES2018" isn't style-file defined
+--line 1677 of file refs.bib
+Warning--to sort, need author or key in rfc760
+Warning--to sort, need author or key in 9844436
+Warning--to sort, need author or key in 8457469
+Warning--to sort, need author or key in brainkartAES2018
+Warning--empty author in 8457469
+Warning--empty author in 9844436
+You've used 85 entries,
             2118 wiz_defined-function locations,
-            529 strings with 4718 characters,
-and the built_in function-call counts, 1301 in all, are:
-= -- 126
-> -- 52
-< -- 0
-+ -- 23
-- -- 16
-* -- 66
-:= -- 225
-add.period$ -- 19
-call.type$ -- 5
-change.case$ -- 23
+            898 strings with 15845 characters,
+and the built_in function-call counts, 20850 in all, are:
+= -- 2020
+> -- 939
+< -- 13
++ -- 391
+- -- 298
+* -- 985
+:= -- 3560
+add.period$ -- 309
+call.type$ -- 85
+change.case$ -- 402
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 39
-empty$ -- 118
-format.name$ -- 16
-if$ -- 275
+cite$ -- 91
+duplicate$ -- 668
+empty$ -- 1836
+format.name$ -- 298
+if$ -- 4448
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 1
-newline$ -- 32
-num.names$ -- 10
-pop$ -- 37
+int.to.str$ -- 85
+missing$ -- 10
+newline$ -- 481
+num.names$ -- 162
+pop$ -- 679
 preamble$ -- 1
-purify$ -- 18
+purify$ -- 319
 quote$ -- 0
-skip$ -- 32
+skip$ -- 556
 stack$ -- 0
-substring$ -- 54
-swap$ -- 5
-text.length$ -- 0
+substring$ -- 526
+swap$ -- 103
+text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 20
-warning$ -- 0
-while$ -- 11
-width$ -- 6
-write$ -- 61
+type$ -- 336
+warning$ -- 6
+while$ -- 170
+width$ -- 87
+write$ -- 973
+(There were 9 warnings)
