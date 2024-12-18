@@ -5,6 +5,7 @@ view data sent between devices in plain text. This is a problem when setting up
 infrastructure such as banking, e-commerce, or any other service that requires
 sensitive information to be sent over the internet.
 
+\label{sec:tls}
 \begin{Def}[Integrity \& Authenticity]
 
     \textbf{Integrity} is the assurance that data has not been altered in transit.\\
@@ -71,8 +72,8 @@ Decryption takes the same key, ciphertext, and algorithm to produce the original
     \textbf{Hashing} is the process of converting data into a fixed-length string of characters.
     Hashing is a one-way function, meaning it cannot be reversed (theoretically). In practice, 
     it is computationally infeasible to reverse a hash without brute force (trying all possible inputs) 
-    or exploiting weaknesses in the hashing algorithm. Some hash algorithms use the text itself 
-    as input, while others may incorporate a separate key (e.g., HMAC). \hfill \cite{codecademy_hashing}
+    or exploiting weaknesses in the hashing algorithm. The results of a hashing algorithm 
+    is often called the \textbf{digest}. \hfill \cite{codecademy_hashing}
 \end{Def}
 
 \begin{Def}[Hypertext Transfer Protocol Secure (HTTPS)]
@@ -128,8 +129,8 @@ Decryption takes the same key, ciphertext, and algorithm to produce the original
     To verify a source, a \textbf{digital signature} is used. 
     \begin{itemize}
         \item \textbf{Key Generation}: A private and public key pair is generated beforehand.
-        \item \textbf{Hashing}: A cryptographic hash of the data is created (e.g., SHA-256).
-        \item \textbf{Encryption}: The private key encrypts the hash, creating the digital signature through an algorithm (e.g., RSA).
+        \item \textbf{Hashing}: A cryptographic hash of the data is created.
+        \item \textbf{Encryption}: The private key encrypts the hash, creating the digital signature through an algorithm.
         \item \textbf{Verification}: The recipient decrypts the signature with the public key and compares the result to their own hash of the data. \hfill \cite{cisa_digital_signatures}
     \end{itemize}
 \end{Def}
@@ -198,6 +199,7 @@ Decryption takes the same key, ciphertext, and algorithm to produce the original
 
 \newpage 
 
+\noindent
 \begin{Def}[DNS over HTTPS (DoH) and DNS over TLS (DoT)]
 
     \textbf{DNS over HTTPS (DoH)} and \textbf{DNS over TLS (DoT)} are protocols designed to encrypt DNS queries, improving privacy and security:
@@ -208,9 +210,10 @@ Decryption takes the same key, ciphertext, and algorithm to produce the original
     \end{itemize}
 
     \noindent
-    Both protocols prevent DNS queries from being visible in plaintext, mitigating risks like eavesdropping and DNS spoofing.
     DNS security is known as \textbf{DNSSEC}. \hfill \cite{cloudflare_dns_tls}
 \end{Def}
+
+
 
 
 

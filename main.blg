@@ -5,52 +5,44 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 5 items.
 Database file #1: refs.bib
-Warning--entry type for "joyofcryptography" isn't style-file defined
---line 1529 of file refs.bib
-Warning--entry type for "satish2024aes" isn't style-file defined
---line 1661 of file refs.bib
-Warning--entry type for "brainkartAES2018" isn't style-file defined
---line 1677 of file refs.bib
-Warning--to sort, need author or key in brainkartAES2018
-You've used 22 entries,
+You've used 5 entries,
             2118 wiz_defined-function locations,
-            604 strings with 7683 characters,
-and the built_in function-call counts, 5089 in all, are:
-= -- 487
-> -- 216
-< -- 2
-+ -- 93
-- -- 68
-* -- 209
-:= -- 872
-add.period$ -- 79
-call.type$ -- 22
-change.case$ -- 100
+            529 strings with 4718 characters,
+and the built_in function-call counts, 1301 in all, are:
+= -- 126
+> -- 52
+< -- 0
++ -- 23
+- -- 16
+* -- 66
+:= -- 225
+add.period$ -- 19
+call.type$ -- 5
+change.case$ -- 23
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 158
-empty$ -- 472
-format.name$ -- 68
-if$ -- 1087
+cite$ -- 5
+duplicate$ -- 39
+empty$ -- 118
+format.name$ -- 16
+if$ -- 275
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 0
-newline$ -- 126
-num.names$ -- 42
-pop$ -- 187
+int.to.str$ -- 5
+missing$ -- 1
+newline$ -- 32
+num.names$ -- 10
+pop$ -- 37
 preamble$ -- 1
-purify$ -- 78
+purify$ -- 18
 quote$ -- 0
-skip$ -- 136
+skip$ -- 32
 stack$ -- 0
-substring$ -- 113
-swap$ -- 22
-text.length$ -- 2
+substring$ -- 54
+swap$ -- 5
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 88
-warning$ -- 1
-while$ -- 42
-width$ -- 24
-write$ -- 249
-(There were 4 warnings)
+type$ -- 20
+warning$ -- 0
+while$ -- 11
+width$ -- 6
+write$ -- 61

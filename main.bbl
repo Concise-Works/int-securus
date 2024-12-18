@@ -1,151 +1,33 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{1}
 
-\bibitem{brainkartAES2018}
-Aes (advanced encryption standard) structure, 2018--2023.
-\newblock Copyright {\textcopyright} 2018--2023 BrainKart.com; Developed by
-  Therithal info, Chennai. Accessed: 2024-06-15.
+\bibitem{bytebytego2024ssl_tls_https}
+ByteByteGo.
+\newblock Ssl, tls, https explained.
+\newblock YouTube Video, 2024.
+\newblock Accessed: 2024-12-17.
 
-\bibitem{adetunji_symmetric_asymmetric_encryption}
-Daniel Adetunji.
-\newblock Symmetric and asymmetric key encryption – explained in plain
-  english, April 2023.
-\newblock Accessed: 2024-12-14.
+\bibitem{codesigningstore2024hashcomparison}
+{CodeSigningStore Team}.
+\newblock Hash algorithm comparison: Md5, sha-1, sha-2 \& sha-3.
+\newblock \url{https://codesigningstore.com/hash-algorithm-comparison}, 2024.
+\newblock Accessed: 2024-12-17.
 
-\bibitem{satish2024aes}
-Satish CJ.
-\newblock Aes iii - advanced encryption standard - introduction, key expansion
-  in aes cyber security cse4003, 2024.
-\newblock Accessed: 2024-06-15.
+\bibitem{rfc5246}
+T.~Dierks and E.~Rescorla.
+\newblock The transport layer security (tls) protocol version 1.2.
+\newblock Request for Comments 5246, RFC Editor, August 2008.
+\newblock Standards Track.
 
-\bibitem{cloudflare_dns_tls}
-{Cloudflare}.
-\newblock Dns over tls vs. dns over https | secure dns.
-\newblock \url{https://www.cloudflare.com/learning/dns/dns-over-tls/}, n.d.
-\newblock Accessed: 2024-12-14.
-
-\bibitem{cloudflare_root_signing}
-{Cloudflare}.
-\newblock The dnssec root signing ceremony.
-\newblock
-  \url{https://www.cloudflare.com/learning/dns/dnssec/root-signing-ceremony/},
-  n.d.
-\newblock Accessed: 2024-12-14.
-
-\bibitem{cloudflare_tls}
-{Cloudflare}.
-\newblock What is tls (transport layer security)?
-\newblock
-  \url{https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/},
-  n.d.
-\newblock Accessed: 2024-12-14.
-
-\bibitem{cloudflare_http_not_secure}
-{Cloudflare}.
-\newblock Why is http not secure? | http vs. https.
-\newblock
-  \url{https://www.cloudflare.com/learning/ssl/why-is-http-not-secure/}, n.d.
-\newblock Accessed: 2024-12-14.
-
-\bibitem{codecademy_hashing}
-{Codecademy}.
-\newblock What is hashing, and how does it work?
-\newblock \url{https://www.codecademy.com/resources/blog/what-is-hashing/},
-  April 2023.
-\newblock Accessed: 2024-12-14.
-
-\bibitem{rfc5280}
-D.~Cooper, S.~Santesson, S.~Farrell, S.~Boeyen, R.~Housley, and W.~Polk.
-\newblock Internet x.509 public key infrastructure certificate and certificate
-  revocation list (crl) profile.
-\newblock Request for Comments (RFC) 5280, May 2008.
-\newblock Obsoletes RFC 3280, RFC 4325, RFC 4630.
-
-\bibitem{cisa_digital_signatures}
-{Cybersecurity and Infrastructure Security Agency (CISA)}.
-\newblock Understanding digital signatures.
-\newblock
-  \url{https://www.cisa.gov/news-events/news/understanding-digital-signatures},
-  February 2021.
-\newblock Accessed: 2024-12-14.
-
-\bibitem{nist80038a}
-Morris Dworkin.
-\newblock Recommendation for block cipher modes of operation: Methods and
-  techniques.
-\newblock Special Publication 800-38A, National Institute of Standards and
-  Technology (NIST), 2001.
-
-\bibitem{essex2024encrypting}
-Aleksander Essex.
-\newblock Encrypting with block ciphers, 2024.
-\newblock YouTube video.
-
-\bibitem{kinsta_tls_ssl}
-{Kinsta}.
-\newblock Tls vs ssl: What’s the difference? which one should you use?
-\newblock \url{https://kinsta.com/knowledgebase/tls-vs-ssl/}, 2019.
-\newblock Published December 19, 2019. Updated August 14, 2023. Accessed:
-  2024-12-14.
-
-\bibitem{nist_aes2001}
-{National Institute of Standards and Technology (NIST)}, Morris~J. Dworkin,
-  Elaine Barker, James~R. Nechvatal, James Foti, Lawrence~E. Bassham,
-  E.~Roback, and James F.~Dray Jr.
-\newblock Advanced encryption standard (aes).
-\newblock Federal Information Processing Standards Publication 197, National
-  Institute of Standards and Technology, November 2001.
-\newblock Accessed: 2024-06-15. Local download available at
-  \url{https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=901427}.
-
-\bibitem{rfc2986}
-M.~Nystrom and B.~Kaliski.
-\newblock Pkcs \#10: Certification request syntax specification version 1.7.
-\newblock Request for Comments (RFC) 2986, November 2000.
-\newblock Obsoletes RFC 2314.
-
-\bibitem{okta_pki}
-{Okta}.
-\newblock What is public key infrastructure (pki) and how does it work?
-\newblock \url{https://www.okta.com/identity-101/public-key-infrastructure/},
-  August 2024.
-\newblock Accessed: 2024-12-14.
-
-\bibitem{joyofcryptography}
-Mike Rosulek.
-\newblock The joy of cryptography.
-\newblock \url{https://joyofcryptography.com}.
-
-\bibitem{seth2013macvsHMAC}
-Seth.
-\newblock What is the difference between mac and hmac?
-\newblock Crypto Stack Exchange, 2013.
-\newblock Answered on Mar 1, 2013, edited Feb 9, 2016. Available at:
-  \url{https://crypto.stackexchange.com/questions/6523/what-is-the-difference-between-mac-and-hmac}
-  [Accessed: YYYY-MM-DD].
-
-\bibitem{timour2019crypto}
-Forrest Timour.
-\newblock An abridged history of cryptography, 2019.
-\newblock Available online.
-
-\bibitem{vidder_gcm_gmac}
-{Vidder, Inc.}
-\newblock Galois/counter mode (gcm) and gmac, 2016.
-\newblock Accessed: 2024-06-15.
+\bibitem{RSA}
+R.~L. Rivest, A.~Shamir, and L.~Adleman.
+\newblock A method for obtaining digital signatures and public-key
+  cryptosystems.
+\newblock {\em Commun. ACM}, 21(2):120–126, February 1978.
 
 \bibitem{concise_works_modules}
 Concise Works.
 \newblock Sect modules.
 \newblock \url{https://github.com/Concise-Works/sect-modules}, n.d.
 \newblock Accessed November 2024.
-
-\bibitem{yitzhak_digital_certificates}
-Tal Yitzhak.
-\newblock Understanding digital certificates: Self-signed vs. ca-signed
-  certificates.
-\newblock
-  \url{https://medium.com/@talyitzhak/understanding-digital-certificates-and-self-signed-certificates-b1cdca759bbc},
-  July 2024.
-\newblock Accessed: 2024-12-14.
 
 \end{thebibliography}
